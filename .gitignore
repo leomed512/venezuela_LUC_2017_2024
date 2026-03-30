@@ -44,7 +44,9 @@ Thumbs.db
 
 # Rasters
 *.tif
+*.tif.aux.xml
 *.tiff
+
 *.img
 *.vrt
 *.ovr
@@ -59,8 +61,7 @@ Thumbs.db
 
 # Bases de datos geoespaciales
 *.gpkg
-*.sqlite
-*.db
+
 
 # ============================================================
 # CARPETAS DE DATOS
@@ -82,6 +83,7 @@ resultados/
 *.prj
 *.cpg
 *.qpj
+*.qgz
 
 # Temporales raster
 *_raw.tif

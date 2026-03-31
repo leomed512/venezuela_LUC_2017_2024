@@ -101,8 +101,8 @@ def counts_to_dataframe(counts: Counter, year: int) -> pd.DataFrame:
             "class_id": class_id,
             "class_name": LULC_CLASSES.get(class_id, f"Class {class_id}"),
             "pixels": n_pixels,
-            "area_km2": round(n_pixels * px_km2, 2),
-            "area_ha": round(n_pixels * px_ha, 2),
+            "area_km2": round(n_pixels * px_km2, 4),
+            "area_ha": round(n_pixels * px_ha, 4),
         })
 
     df = pd.DataFrame(rows)
@@ -189,7 +189,7 @@ def compute_transition_matrix() -> pd.DataFrame:
     matrix = pd.DataFrame(0.0, index=all_classes, columns=all_classes)
 
     for (c17, c24), n in transitions.items():
-        matrix.loc[c17, c24] = round(n * px_km2, 2)
+        matrix.loc[c17, c24] = round(n * px_km2, 4)
 
     labels = {c: LULC_CLASSES.get(c, f"Class {c}") for c in all_classes}
     matrix.index = [labels[c] for c in all_classes]

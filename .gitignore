@@ -49,6 +49,8 @@ Thumbs.db
 
 *.img
 *.vrt
+*.png
+*.pdf
 *.ovr
 
 # DEM / HGT

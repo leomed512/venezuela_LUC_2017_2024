@@ -49,8 +49,6 @@ Thumbs.db
 
 *.img
 *.vrt
-*.png
-*.pdf
 *.ovr
 
 # DEM / HGT
@@ -95,7 +93,6 @@ resultados/
 # ============================================================
 # CREDENCIALES / CLOUD
 # ============================================================
-*.json
 credentials.json
 key.json
 *.pem
@@ -111,3 +108,14 @@ key.json
 # CACHE GENERAL
 # ============================================================
 .cache/
+
+# ============================================================
+# WEB DATA EXCEPTIONS
+# src/data/ contains web-optimized outputs that MUST be
+# tracked so GitHub Pages can serve them.
+# ============================================================
+!src/data/**
+!src/data/*.geojson
+!src/data/*.csv
+!src/data/*.json
+!src/data/rasters/tiles/**/*.png

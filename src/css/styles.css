@@ -1,0 +1,408 @@
+/* ── Tokens ── */
+:root {
+  --bg-deep: #0f1214;
+  --bg-panel: #181c20;
+  --bg-card: #1e2328;
+  --bg-card-hover: #252a30;
+  --border: #2a3038;
+  --text: #d8dce0;
+  --text-muted: #8a929a;
+  --text-heading: #f0f2f4;
+  --accent-green: #2ecc71;
+  --accent-red: #e74c3c;
+  --accent-amber: #f39c12;
+  --accent-blue: #3498db;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --radius: 6px;
+  --shadow: 0 2px 12px rgba(0,0,0,.4);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg-deep);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+
+a { color: var(--accent-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Header ── */
+.site-header {
+  padding: 2.4rem 2rem 1.6rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(170deg, #131820 0%, var(--bg-deep) 100%);
+}
+
+.header-content { max-width: 1440px; margin: 0 auto; }
+
+.site-header h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin-top: .45rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* ── Controls bar ── */
+.controls-bar {
+  display: flex;
+  align-items: center;
+  gap: 1  .6rem;
+  padding: 1rem 2rem;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.control-group label {
+  font-size: .8rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+select {
+  appearance: none;
+  background: var(--bg-card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238a929a'/%3E%3C/svg%3E") no-repeat right .65rem center;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .45rem 2rem .45rem .65rem;
+  font-family: var(--font-body);
+  font-size: .9rem;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+
+select:hover, select:focus {
+  border-color: var(--accent-green);
+  outline: none;
+}
+
+.toggle-buttons { display: flex; gap: .35rem; }
+
+.toggle-btn {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .4rem .7rem;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.toggle-btn:hover { border-color: var(--text-muted); }
+
+.toggle-btn.active {
+  background: var(--accent-green);
+  color: var(--bg-deep);
+  border-color: var(--accent-green);
+  font-weight: 600;
+}
+
+/* ── Dashboard layout ── */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 0;
+  max-width: 100%;
+  min-height: calc(100vh - 180px);
+}
+
+/* ── Map panel ── */
+.panel-map {
+  position: relative;
+  min-height: 500px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background: var(--bg-deep);
+}
+
+/* Leaflet overrides */
+.leaflet-container { background: var(--bg-deep) !important; }
+.leaflet-control-zoom a {
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+.leaflet-control-zoom a:hover { background: var(--bg-card-hover) !important; }
+
+/* Map legend */
+.map-legend {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+  z-index: 1000;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .6rem .8rem;
+  font-size: .75rem;
+  box-shadow: var(--shadow);
+}
+
+.legend-title {
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: .35rem;
+}
+
+.legend-scale {
+  display: flex;
+  align-items: center;
+  gap: .15rem;
+}
+
+.legend-bar {
+  width: 140px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin-top: .15rem;
+  color: var(--text-muted);
+  font-size: .75rem;
+}
+
+/* ── Sidebar ── */
+.panel-sidebar {
+  background: var(--bg-panel);
+  border-left: 1px solid var(--border);
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.card h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-heading);
+  margin-bottom: .6rem;
+}
+
+.card-context {
+  border-left: 3px solid var(--accent-green);
+}
+
+.context-summary {
+  font-size: .92rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.context-summary strong {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.context-summary .metric-highlight {
+  color: var(--accent-red);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Detail card */
+.card-detail { position: relative; }
+.card-detail.hidden { display: none; }
+
+.close-btn {
+  position: absolute;
+  top: .5rem;
+  right: .6rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.close-btn:hover { color: var(--text); }
+
+.detail-type {
+  font-size: .75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .6rem;
+}
+
+.detail-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .4rem .8rem;
+  margin-bottom: .8rem;
+}
+
+.detail-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-metric .label {
+  font-size: .88rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.detail-metric .value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.detail-metric .value.loss { color: var(--accent-red); }
+.detail-metric .value.gain { color: var(--accent-green); }
+
+/* Charts: let Plotly handle sizing */
+.card-chart { padding-bottom: .4rem; }
+#chart-ranking, #chart-by-type, #chart-detail-comparison { width: 100%; }
+
+/* ── Footer ── */
+.site-footer {
+  padding: 1.2rem 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+/* ── Leaflet tooltip override ── */
+.abrae-tooltip {
+  background: var(--bg-panel) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  padding: .5rem .65rem !important;
+  font-family: var(--font-body) !important;
+  font-size: .78rem !important;
+  box-shadow: var(--shadow) !important;
+  max-width: 260px !important;
+}
+
+.abrae-tooltip .tt-name {
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: .2rem;
+}
+
+.abrae-tooltip .tt-type {
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-bottom: .3rem;
+}
+
+.abrae-tooltip .tt-metric {
+  font-weight: 600;
+  font-size: .88rem;
+}
+
+.abrae-tooltip .tt-metric.loss { color: var(--accent-red); }
+.abrae-tooltip .tt-metric.gain { color: var(--accent-green); }
+
+/* Leaflet tooltip arrow override */
+.abrae-tooltip::before { border: none !important; }
+
+/* Leaflet map selector override */
+
+.leaflet-control-layers {
+  background: var(--bg-panel) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  color: var(--text) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.leaflet-control-layers-separator {
+  border-top-color: var(--border) !important;
+}
+
+.leaflet-control-layers label {
+  color: var(--text) !important;
+  font-family: var(--font-body) !important;
+  font-size: .9rem !important;
+}
+
+
+/* ── LM Logo ── */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  margin-top: 0.5rem;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .panel-map { min-height: 50vh; }
+  .panel-sidebar {
+    max-height: none;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .site-header h1 { font-size: 1.4rem; }
+  .controls-bar { gap: .8rem; padding: .6rem 1rem; }
+}
+
+

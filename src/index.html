@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambio de Cobertura en ABRAEs de Venezuela · 2017–2024</title>
+  <link rel="icon" type="image/svg+xml" href="assets/satellite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Cambio de Cobertura del Suelo en Áreas Protegidas de Venezuela</h1>
+      <p class="subtitle">Análisis de 215 ABRAEs de interés ambiental y forestal con datos Sentinel-2 (ESA/Esri 10m) · 2017–2024</p>
+    </div>
+  </header>
+
+  <!-- Controls bar -->
+  <nav class="controls-bar">
+    <div class="control-group">
+      <label for="metric-select">Métrica</label>
+      <select id="metric-select">
+        <option value="forest_loss_ha" selected>Pérdida de bosque (ha)</option>
+        <option value="forest_loss_pct">Pérdida de bosque (%)</option>
+        <option value="agriculture_gain_ha">Ganancia agrícola (ha)</option>
+        <option value="urban_gain_ha">Expansión urbana (ha)</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label for="type-select">Tipo de ABRAE</label>
+      <select id="type-select">
+        <option value="all" selected>Todas</option>
+      </select>
+    </div>
+    <div class="control-group layer-toggles">
+      <label>Rasters de cobertura</label>
+      <div class="toggle-buttons">
+        <button class="toggle-btn" data-layer="lc2017">2017</button>
+        <button class="toggle-btn" data-layer="lc2024">2024</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main layout -->
+  <main class="dashboard">
+
+    <!-- Map panel -->
+    <section class="panel panel-map">
+      <div id="map"></div>
+      <div class="map-legend" id="map-legend"></div>
+    </section>
+
+    <!-- Sidebar: charts + info -->
+    <aside class="panel panel-sidebar">
+
+      <!-- Context card -->
+      <div class="card card-context" id="context-card">
+        <p class="context-summary" id="context-summary">
+          Selecciona una métrica y tipo de ABRAE para explorar.
+        </p>
+      </div>
+
+      <!-- Ranking chart -->
+      <div class="card card-chart">
+        <h3>Top 10 · <span id="ranking-title">Pérdida de bosque</span></h3>
+        <div id="chart-ranking"></div>
+      </div>
+
+      <!-- Comparison by type -->
+      <div class="card card-chart">
+        <h3>Comparación por tipo de ABRAE</h3>
+        <div id="chart-by-type"></div>
+      </div>
+
+      <!-- ABRAE detail (shown on click) -->
+      <div class="card card-detail hidden" id="detail-card">
+        <button class="close-btn" id="close-detail">✕</button>
+        <h3 id="detail-name"></h3>
+        <p class="detail-type" id="detail-type"></p>
+        <div class="detail-metrics" id="detail-metrics"></div>
+        <div id="chart-detail-comparison"></div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      Datos: <a href="https://livingatlas.arcgis.com/landcoverexplorer/" target="_blank">Esri/Sentinel-2 10m Land Cover</a>
+      · Áreas protegidas: <a href="https://www.protectedplanet.net/" target="_blank">WDPA</a>
+      · <a href="https://github.com/leomed512" target="_blank">GitHub</a>
+    </p>
+           <a
+      href="https://github.com/leomed512"
+      target="_blank"
+      class="footer-logo-link"
+    >
+      <img
+        src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
+        alt="Leo Medina"
+        class="footer-logo"
+      />
+    </a>
+
+  </footer>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

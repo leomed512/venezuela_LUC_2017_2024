@@ -1,15 +1,30 @@
-# Venezuela Land Cover Change Analysis (2017–2024)
+# Venezuela Land Cover Change in Protected Areas (2017–2024)
 
-Land use/land cover change analysis for Venezuela using Sentinel-2 10m LULC data from ESRI Living Atlas. Covers the full national extent (~912,000 km²) at 10-meter resolution.
+Land use/land cover change analysis for Venezuela using Sentinel-2 10m LULC data from ESRI Living Atlas. Covers the full national extent (~912,000 km²) at 10-meter resolution, with a focused assessment of change within 215 protected areas (ABRAEs). Results published through an interactive web dashboard.
 
 ## What this does
 
+**National analysis:**
 - Reprojects 16 satellite tiles (8 per year) from native UTM zones to Albers Equal-Area Conic
 - Mosaics and clips to the Venezuelan national boundary
 - Computes area statistics per land cover class for 2017 and 2024
 - Generates a transition matrix showing class-to-class change in km²
 - Produces a spatially explicit change raster
-- Visualizes results through static and interactive charts
+
+**Protected area analysis:**
+- Extracts and filters ABRAE polygons from the World Database on Protected Areas (WDPA) layers
+- Validates geometries, reprojects to Albers Equal-Area, and exports to GeoPackage by ABRAE type
+- Computes categorical zonal histograms: pixel counts per land cover class within each ABRAE, for both years
+- Derives change indicators per ABRAE: forest loss (ha and %), agricultural gain, urban expansion
+- Generates rankings, summaries by ABRAE type, and comparison tables
+- Simplifies and reprojects vectors to WGS84 for web display; converts rasters to XYZ PNG tile pyramids with gdal2tiles
+- Serves results through an interactive web dashboard with map, charts, and raster overlays
+
+## Live dashboard
+
+Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selected metric, filterable by ABRAE type. Raster layers (2017/2024 land cover) toggleable as tile overlays. Charts update on filter change.
+
+Stack: Leaflet, Plotly.js, vanilla HTML/CSS/JS. No framework, no build step, no backend.
 
 ## Data
 
@@ -19,6 +34,10 @@ Source: [ArcGIS Living Atlas](https://www.arcgis.com/home/item.html?id=cfcb7609d
 
 Reference: Karra, Kontgis et al. "Global land use/land cover with Sentinel-2 and deep learning." IGARSS 2021. IEEE.
 
+**Protected areas:** WDPA polygons filtered for Venezuela. Six ABRAE types: National Park, Forest Reserve, Protective Zone, Natural Monument, Wildlife Refuge, Biosphere Reserve.
+
+Source: [Protected Planet](https://www.protectedplanet.net/)
+
 **Elevation:** NASADEM HGT v001 (~30m resolution), downloaded via NASA Earthdata. Used as a base layer for cartographic context.
 
 ## Project structure
@@ -26,20 +45,31 @@ Reference: Karra, Kontgis et al. "Global land use/land cover with Sentinel-2 and
 ```
 venezuela_landcover/
 ├── data/
-│   ├── raw/                    # Original tiles, boundary, and DEM zips
-│   │   └── dem/                # NASADEM raw .zip and extracted .hgt files
+│   ├── raw/                        # Original tiles, boundary, DEM, WDPA shapefiles
 │   └── processed/
-│       ├── cover/              # Reprojected, mosaiced, clipped LULC rasters
-│       └── dem/                # Clipped DEM (venezuela_dem.tif)
+│       ├── cover/                  # Reprojected, mosaiced, clipped LULC rasters
+│       ├── dem/                    # Clipped DEM
+│       └── abrae_change_indicators.gpkg
 ├── outputs/
-│   ├── results/                # CSV tables (areas, comparison, transition matrix)
-│   └── figures/                # Chart exports (PNG)
+│   ├── figures/                    # Chart exports (PNG)
+│   ├── results/                    # National-level CSV tables
+│   └── zonal/                      # Per-ABRAE zonal histograms and comparisons
 ├── scripts/
-│   ├── process_tiles.py        # GDAL pipeline: reproject, mosaic, clip
-│   ├── analyze_cover.py        # Stats, transition matrix, change raster
-│   └── download_dem.py         # Download and process NASADEM via Earthdata
-└── notebooks/
-    └── cover_analysis.ipynb    # Visualization and exploratory analysis
+│   ├── project_clip_raster.py      # GDAL pipeline: reproject, mosaic, clip
+│   ├── analyze_cover.py            # National stats, transition matrix, change raster
+│   ├── download_dem.py             # NASADEM download via Earthdata
+│   ├── prepare_web_data.py         # Optimize vectors/tables for web
+│   └── generate_raster_tiles.sh    # gdal2tiles for PNG tile pyramids
+├── notebooks/
+│   ├── cover_analysis.ipynb        # National-level visualization
+│   ├── abraes_extract.ipynb        # WDPA filtering and ABRAE preparation
+│   └── abraes_analysis.ipynb       # Zonal statistics, change indicators, ABRAE maps
+├── src/                            # Web dashboard (GitHub Pages)
+│   ├── index.html
+│   ├── css/styles.css
+│   ├── js/app.js
+│   └── data/                       # Web-optimized GeoJSON, CSV, raster tiles
+└── qgis/                           # QGIS project files for cartographic output
 ```
 
 ## Setup
@@ -65,19 +95,40 @@ DEM download requires a [NASA Earthdata](https://urs.earthdata.nasa.gov/) accoun
 
 ## Usage
 
+### Phase 1: National land cover analysis
+
 ```bash
-# Step 1: Reproject tiles, build mosaic, clip to boundary
-python scripts/process_tiles.py
+# Reproject tiles, build mosaic, clip to boundary
+python scripts/project_clip_raster.py
 
-# Step 2: Compute stats and generate change raster
+# Compute national stats and generate change raster
 python scripts/analyze_cover.py
-
-# Step 2 (tables only, skip change raster):
-python scripts/analyze_cover.py
-python scripts/analyze_cover.py --no-change-raster # If a change raster is not needed
 
 # Download and process DEM (requires Earthdata login)
 python scripts/download_dem.py
+```
+
+National-level visualization in `notebooks/cover_analysis.ipynb`.
+
+### Phase 2: Protected area (ABRAE) analysis
+
+```bash
+# Run notebooks in order:
+# 1. Extract and filter ABRAE polygons from WDPA
+#    notebooks/abraes_extract.ipynb
+#
+# 2. Zonal statistics, change indicators, exploratory maps
+#    notebooks/abraes_analysis.ipynb
+
+# Prepare web-optimized vectors and tables
+python scripts/prepare_web_data.py
+
+# Generate raster tile pyramids for the web dashboard
+chmod +x scripts/generate_raster_tiles.sh
+./scripts/generate_raster_tiles.sh
+
+# Serve locally
+python -m http.server 8000 --directory src
 ```
 
 Cartographic output produced in QGIS Print Layout.
@@ -89,11 +140,11 @@ Albers Equal-Area Conic, custom parameters for Venezuela:
 - Central meridian: 66°W
 - Datum: WGS84
 
-This projection preserves area measurements across the full national extent. Analysis is done in Albers; cartographic output is presented in WGS84 (EPSG:4326).
+Preserves area measurements across the full national extent. Analysis in Albers; web output reprojected to WGS84 (EPSG:4326).
 
 ## Tools
 
-GDAL, Python (rasterio, numpy, pandas, geopandas, earthaccess), QGIS, matplotlib, seaborn, plotly.
+GDAL, Python (rasterio, rasterstats, numpy, pandas, geopandas, earthaccess), Leaflet, Plotly.js, QGIS, matplotlib, seaborn.
 
 ## Author
 

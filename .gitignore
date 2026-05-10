@@ -73,7 +73,6 @@ data/raw_extracted/
 data/processed/
 output/
 resultados/
-qgis/
 
 
 # ============================================================
@@ -121,6 +120,10 @@ key.json
 !src/data/*.csv
 !src/data/*.json
 !src/data/rasters/tiles/**/*.png
-!qgis/LUC_ven_pdf_2.pdf
+
+
+qgis/*
+!qgis/
 !qgis/2017_LULC_map.png
 !qgis/web_gis_app.png
+!qgis/LUC_ven_pdf_2.pdf

@@ -28,7 +28,7 @@ Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selec
 
 Stack: MapLibre GL JS, PMTiles, Plotly.js, vanilla HTML/CSS/JS. No framework, no build step, no backend.
 
-![2017 LULC map](qgis/web_gis_app.png)
+![Web Dashboard](qgis/web_gis_app.png)
 
 ## Data
 

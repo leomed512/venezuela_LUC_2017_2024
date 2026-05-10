@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cambio de Cobertura en ABRAEs de Venezuela · 2017–2024</title>
-  <link rel="icon" type="image/svg+xml" href="assets/satellite.svg" />
+  <link rel="icon" type="image/svg+xml" href="../assets/satellite.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="https://unpkg.com/pmtiles@3.2.0/dist/pmtiles.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="header-content">
       <h1>Cambio de Cobertura del Suelo en Áreas Protegidas de Venezuela</h1>
@@ -25,7 +25,6 @@
     </div>
   </header>
 
-  <!-- Controls bar -->
   <nav class="controls-bar">
     <div class="control-group">
       <label for="metric-select">Métrica</label>
@@ -51,38 +50,68 @@
     </div>
   </nav>
 
-  <!-- Main layout -->
   <main class="dashboard">
-
-    <!-- Map panel -->
     <section class="panel panel-map">
       <div id="map"></div>
+
+      <!-- Layer control (basemap + overlays) -->
+      <div class="layer-control" id="layer-control">
+        <button class="layer-control-toggle" id="layer-control-toggle" title="Capas">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+        </button>
+        <div class="layer-control-panel hidden" id="layer-control-panel">
+          <div class="lc-section">
+            <div class="lc-title">Mapa base</div>
+            <label><input type="radio" name="basemap" value="dark" checked /> Oscuro</label>
+            <label><input type="radio" name="basemap" value="satellite" /> Satélite</label>
+          </div>
+          <div class="lc-separator"></div>
+          <div class="lc-section">
+            <div class="lc-title">Capas</div>
+            <label><input type="checkbox" id="lc-abraes" checked /> ABRAEs</label>
+            <label><input type="checkbox" id="lc-2017" /> Cobertura 2017</label>
+            <label><input type="checkbox" id="lc-2024" /> Cobertura 2024</label>
+          </div>
+        </div>
+      </div>
+
       <div class="map-legend" id="map-legend"></div>
+      <div class="raster-legend hidden" id="raster-legend">
+  <div class="legend-title">Cobertura del suelo</div>
+  <div class="rl-items">
+    <span class="rl-item"><i style="background:#1A5BAB"></i>Agua</span>
+    <span class="rl-item"><i style="background:#397D49"></i>Árboles</span>
+    <span class="rl-item"><i style="background:#7A87C6"></i>Veg. inundada</span>
+    <span class="rl-item"><i style="background:#E49635"></i>Cultivos</span>
+    <span class="rl-item"><i style="background:#E02020"></i>Construido</span>
+    <span class="rl-item"><i style="background:#B39F81"></i>Suelo desnudo</span>
+    <span class="rl-item"><i style="background:#DFC35A"></i>Pastizales</span>
+    <span class="rl-item"><i style="background:#616161"></i>Nubes</span>
+  </div>
+</div>
     </section>
 
-    <!-- Sidebar: charts + info -->
     <aside class="panel panel-sidebar">
-
-      <!-- Context card -->
       <div class="card card-context" id="context-card">
         <p class="context-summary" id="context-summary">
           Selecciona una métrica y tipo de ABRAE para explorar.
         </p>
       </div>
 
-      <!-- Ranking chart -->
       <div class="card card-chart">
         <h3>Top 10 · <span id="ranking-title">Pérdida de bosque</span></h3>
         <div id="chart-ranking"></div>
       </div>
 
-      <!-- Comparison by type -->
       <div class="card card-chart">
         <h3>Comparación por tipo de ABRAE</h3>
         <div id="chart-by-type"></div>
       </div>
 
-      <!-- ABRAE detail (shown on click) -->
       <div class="card card-detail hidden" id="detail-card">
         <button class="close-btn" id="close-detail">✕</button>
         <h3 id="detail-name"></h3>
@@ -93,27 +122,17 @@
     </aside>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p>
       Datos: <a href="https://livingatlas.arcgis.com/landcoverexplorer/" target="_blank">Esri/Sentinel-2 10m Land Cover</a>
       · Áreas protegidas: <a href="https://www.protectedplanet.net/" target="_blank">WDPA</a>
       · <a href="https://github.com/leomed512" target="_blank">GitHub</a>
     </p>
-           <a
-      href="https://github.com/leomed512"
-      target="_blank"
-      class="footer-logo-link"
-    >
-      <img
-        src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png"
-        alt="Leo Medina"
-        class="footer-logo"
-      />
+    <a href="https://github.com/leomed512" target="_blank" class="footer-logo-link">
+      <img src="https://res.cloudinary.com/arawato666/image/upload/v1711993726/Leo-Logo_y855da.png" alt="Leo Medina" class="footer-logo" />
     </a>
-
   </footer>
 
-  <script src="js/app.js" type="module"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

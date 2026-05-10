@@ -12,19 +12,19 @@ Land use/land cover change analysis for Venezuela using Sentinel-2 10m LULC data
 - Produces a spatially explicit change raster
 
 **Protected area analysis:**
-- Extracts and filters ABRAE polygons from the World Database on Protected Areas (WDPA) layers
+- Extracts and filters ABRAE polygons from the World Database on Protected Areas (WDPA)
 - Validates geometries, reprojects to Albers Equal-Area, and exports to GeoPackage by ABRAE type
 - Computes categorical zonal histograms: pixel counts per land cover class within each ABRAE, for both years
 - Derives change indicators per ABRAE: forest loss (ha and %), agricultural gain, urban expansion
 - Generates rankings, summaries by ABRAE type, and comparison tables
-- Simplifies and reprojects vectors to WGS84 for web display; converts rasters to XYZ PNG tile pyramids with gdal2tiles
-- Serves results through an interactive web dashboard with map, charts, and raster overlays
+- Simplifies and reprojects vectors to WGS84 for web display; converts rasters to PMTiles archives via gdal2tiles, mb-util, and pmtiles CLI
+- Serves results through an interactive MapLibre GL JS dashboard with map, charts, and raster overlays
 
 ## Live dashboard
 
-Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selected metric, filterable by ABRAE type. Raster layers (2017/2024 land cover) toggleable as tile overlays. Charts update on filter change.
+Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selected metric, filterable by ABRAE type. Raster layers (2017/2024 land cover) served as PMTiles archives with range requests. Basemap switching between dark and satellite. Charts update on filter change.
 
-Stack: Leaflet, Plotly.js, vanilla HTML/CSS/JS. No framework, no build step, no backend.
+Stack: MapLibre GL JS, PMTiles, Plotly.js, vanilla HTML/CSS/JS. No framework, no build step, no backend.
 
 ## Data
 
@@ -59,7 +59,7 @@ venezuela_landcover/
 │   ├── analyze_cover.py            # National stats, transition matrix, change raster
 │   ├── download_dem.py             # NASADEM download via Earthdata
 │   ├── prepare_web_data.py         # Optimize vectors/tables for web
-│   └── generate_raster_tiles.sh    # gdal2tiles for PNG tile pyramids
+│   └── generate_pmtiles.sh         # gdal2tiles + mb-util + pmtiles packaging
 ├── notebooks/
 │   ├── cover_analysis.ipynb        # National-level visualization
 │   ├── abraes_extract.ipynb        # WDPA filtering and ABRAE preparation
@@ -68,7 +68,13 @@ venezuela_landcover/
 │   ├── index.html
 │   ├── css/styles.css
 │   ├── js/app.js
-│   └── data/                       # Web-optimized GeoJSON, CSV, raster tiles
+│   └── data/
+│       ├── abrae_web.geojson
+│       ├── venezuela_boundary.geojson
+│       ├── *.csv
+│       └── rasters/
+│           ├── lc2017.pmtiles      # Land cover 2017 raster tiles
+│           └── lc2024.pmtiles      # Land cover 2024 raster tiles
 └── qgis/                           # QGIS project files for cartographic output
 ```
 
@@ -123,9 +129,11 @@ National-level visualization in `notebooks/cover_analysis.ipynb`.
 # Prepare web-optimized vectors and tables
 python scripts/prepare_web_data.py
 
-# Generate raster tile pyramids for the web dashboard
-chmod +x scripts/generate_raster_tiles.sh
-./scripts/generate_raster_tiles.sh
+# Generate PMTiles raster archives (requires pmtiles CLI and mbutil)
+# Install pmtiles: https://github.com/protomaps/go-pmtiles/releases
+# Install mbutil: pip install mbutil
+chmod +x scripts/generate_pmtiles.sh
+./scripts/generate_pmtiles.sh
 
 # Serve locally
 python -m http.server 8000 --directory src
@@ -144,7 +152,7 @@ Preserves area measurements across the full national extent. Analysis in Albers;
 
 ## Tools
 
-GDAL, Python (rasterio, rasterstats, numpy, pandas, geopandas, earthaccess), Leaflet, Plotly.js, QGIS, matplotlib, seaborn.
+GDAL, Python (rasterio, rasterstats, numpy, pandas, geopandas, earthaccess), MapLibre GL JS, PMTiles, Plotly.js, QGIS, matplotlib, seaborn.
 
 ## Author
 

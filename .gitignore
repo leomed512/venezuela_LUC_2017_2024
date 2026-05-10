@@ -122,3 +122,5 @@ key.json
 !src/data/*.json
 !src/data/rasters/tiles/**/*.png
 !qgis/LUC_ven_pdf_2.pdf
+!qgis/2017_LULC_map.png
+!qgis/web_gis_app.png

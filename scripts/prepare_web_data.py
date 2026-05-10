@@ -8,11 +8,11 @@ Input files:
 - data/raw/venezuela.geojson
 
 Generated outputs:
-- src/data/abrae_web.geojson
-- src/data/venezuela_boundary.geojson
-- src/data/summaries_by_abrae.csv
-- src/data/summary_by_type.csv
-- src/data/rankings.csv
+- docs/data/abrae_web.geojson
+- docs/data/venezuela_boundary.geojson
+- docs/data/summaries_by_abrae.csv
+- docs/data/summary_by_type.csv
+- docs/data/rankings.csv
 """
 
 from pathlib import Path

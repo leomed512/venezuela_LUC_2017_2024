@@ -11,6 +11,8 @@ Land use/land cover change analysis for Venezuela using Sentinel-2 10m LULC data
 - Generates a transition matrix showing class-to-class change in km²
 - Produces a spatially explicit change raster
 
+![2017 LULC map](qgis/2017_LULC_map.png)
+
 **Protected area analysis:**
 - Extracts and filters ABRAE polygons from the World Database on Protected Areas (WDPA)
 - Validates geometries, reprojects to Albers Equal-Area, and exports to GeoPackage by ABRAE type
@@ -26,9 +28,13 @@ Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selec
 
 Stack: MapLibre GL JS, PMTiles, Plotly.js, vanilla HTML/CSS/JS. No framework, no build step, no backend.
 
+![2017 LULC map](qgis/web_gis_app.png)
+
 ## Data
 
 **Land cover:** Sentinel-2 10m Land Use/Land Cover Time Series, produced by Impact Observatory, Microsoft and Esri. Deep learning classification over ESA Sentinel-2 imagery, 9 LULC classes, assessed accuracy >75%.
+
+
 
 Source: [ArcGIS Living Atlas](https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d)
 
@@ -64,7 +70,7 @@ venezuela_landcover/
 │   ├── cover_analysis.ipynb        # National-level visualization
 │   ├── abraes_extract.ipynb        # WDPA filtering and ABRAE preparation
 │   └── abraes_analysis.ipynb       # Zonal statistics, change indicators, ABRAE maps
-├── src/                            # Web dashboard (GitHub Pages)
+├── docs/                            # Web dashboard (GitHub Pages)
 │   ├── index.html
 │   ├── css/styles.css
 │   ├── js/app.js
@@ -139,7 +145,8 @@ chmod +x scripts/generate_pmtiles.sh
 python -m http.server 8000 --directory src
 ```
 
-Cartographic output produced in QGIS Print Layout.
+Cartographic output produced in QGIS Print Layout from  Sentinel-2 10m LULC data from ESRI Living Atlas
+[Download full cartographic PDF with LULC](https://github.com/leomed512/venezuela_LUC_2017_2024/blob/master/qgis/LUC_ven_pdf_2.pdf)
 
 ## Projection
 
@@ -156,4 +163,4 @@ GDAL, Python (rasterio, rasterstats, numpy, pandas, geopandas, earthaccess), Map
 
 ## Author
 
-Leonardo Medina — [LinkedIn](https://www.linkedin.com/in/leomedinast/)
+Leonardo Medina | Forestry Engineer - GIS Analyst  — [LinkedIn](https://www.linkedin.com/in/leomedinast/)

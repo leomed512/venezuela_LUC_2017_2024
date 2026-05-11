@@ -27,6 +27,7 @@ Land use/land cover change analysis for Venezuela using Sentinel-2 10m LULC data
 Metrics represent net changes in land cover area between 2017 and 2024. Values near zero do not necessarily indicate absence of territorial dynamics — losses in one area may be offset by regeneration elsewhere within the same ABRAE. This analysis measures net composition change, not pixel-level class transitions. Detailed spatial transition analysis (including gross gains, gross losses, and class-to-class flows) is planned as a future addition.
 
 ## Live dashboard
+Available at [Link](https://leomed512.github.io/venezuela_LUC_2017_2024/)
 
 Static site hosted on GitHub Pages. Map with 215 ABRAE polygons colored by selected metric, filterable by ABRAE type. Raster layers (2017/2024 land cover) served as PMTiles archives with range requests. Basemap switching between dark and satellite. Charts update on filter change.
 

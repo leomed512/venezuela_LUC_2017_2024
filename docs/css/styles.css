@@ -32,14 +32,13 @@
   border-left: 3px solid var(--accent-blue);
   width: 100%;
   max-width: 420px;
-  padding: 0.3rem !important;
-  margin-top: 1.5rem;
+  padding: 0.5rem !important;
+  margin-top: .5rem;
 }
 
 /* Dropdown container */
   .downloads-dropdown {
     width: 100%;
-    max-width: 420px;
   }
 
 /* Header */

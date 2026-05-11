@@ -24,9 +24,91 @@
   color: var(--text-muted);
   font-size: .78rem;
   font-style: italic;
-  max-width: 800px;
+  max-width: 900px;
   line-height: 1.5;
 }
+
+/* ── Tooltip ───────────────────────────── */
+
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+
+  cursor: help;
+
+  color: var(--accent-blue);
+  border-bottom: 1px dotted rgba(255,255,255,.25);
+}
+
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+
+  left: calc(100% + 0.6rem);
+  top: 50%;
+  bottom: auto;
+
+  transform: translateY(-50%);
+
+  width: 360px;
+
+  padding: .8rem .9rem;
+  border-radius: 8px;
+
+  background: rgba(20,20,20,.96);
+  color: rgba(255,255,255,.9);
+
+  font-size: .76rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+
+  transition:
+    opacity .18s ease,
+    visibility .18s ease;
+
+  z-index: 9999;
+}
+
+.info-tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+/* ── introduction text ── */
+.intro-text {
+  margin-top: .55rem;
+  margin-bottom: .35rem;
+  max-width: 900px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: .80rem;
+  font-weight: 400;
+  line-height: 1.55;
+
+  letter-spacing: 0.01em;
+}
+
+/* ── Link to Dowload data cards ── */
+
+.downloads-anchor {
+  color: inherit;
+  text-decoration: none;
+
+  border-bottom: 1px dotted rgba(255,255,255,.35);
+
+  transition: opacity .15s ease;
+}
+
+.downloads-anchor:hover {
+  opacity: .8;
+}
+
+
 /* ── Dowload data cards ── */
 .card-downloads {
   border-left: 3px solid var(--accent-blue);
@@ -142,7 +224,7 @@ a:hover { text-decoration: underline; }
 }
 
 .subtitle {
-  margin-top: .45rem;
+  margin-top: .65rem;
   color: var(--text-muted);
   font-size: 1rem;
   font-weight: 400;
@@ -602,4 +684,23 @@ select:hover, select:focus {
   }
   .site-header h1 { font-size: 1.4rem; }
   .controls-bar { gap: .8rem; padding: .6rem 1rem; }
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .tooltip-content {
+    left: 0;
+    top: 130%;
+    bottom: auto;
+
+    transform: none;
+
+    width: min(280px, 85vw);
+    max-width: 85vw;
+
+    font-size: .7rem;
+    z-index: 9999;
+  }
 }

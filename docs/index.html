@@ -21,12 +21,30 @@
   <header class="site-header">
     <div class="header-content">
       <h1>Cambio de Cobertura del Suelo en Áreas Protegidas de Venezuela</h1>
-      <p class="subtitle">Análisis de 215 ABRAEs de interés ambiental y forestal con datos Sentinel-2 (ESA/Esri 10m) · 2017–2024</p>
-      <p class="disclaimer">
+      <p class="subtitle">
+        Análisis de 215 ABRAEs de interés ambiental y forestal con datos
+        <span class="info-tooltip">
+          Sentinel-2 (ESA/Esri 10m)
+          <span class="tooltip-content">
+            Este producto fue generado mediante modelos de clasificación profunda desarrollados por Impact Observatory y Esri a partir de imágenes Sentinel-2 y miles de millones de píxeles etiquetados manualmente. Aunque el dataset presenta alta consistencia espacial y temporal para análisis regionales, la documentación oficial recomienda considerar incertidumbres inherentes a toda clasificación automática de cobertura del suelo.
+          </span>
+        </span>
+        · 2017–2024
+      </p>
+      <p class="intro-text">
+        Está enfocado en categorías de protección con relevancia ecológica, forestal e hidrológica
+        —como Parques Nacionales, Monumentos Naturales, Reservas Forestales y Zonas Protectoras—,
+        con el objetivo de facilitar la visualización, exploración y reutilización pública de los datos
+        por parte de investigadores, estudiantes, profesionales y entusiastas SIG.
+        <br>  <a href="#downloads" class="downloads-anchor">
+          Se incluyen links de descarga de datos geográficos y tabulares.
+        </a>
+      </p>
+      <p class="intro-text">
         Las métricas representan <b>cambios netos</b> en la superficie de cobertura. Valores cercanos a cero
         no implican ausencia de dinámica territorial: pérdidas en una zona pueden ser compensadas por
-        regeneración en otra dentro de la misma ABRAE. <br> Análisis de transiciones espaciales detalladas
-        en desarrollo.
+        regeneración en otra dentro de la misma ABRAE. <b> El análisis de transiciones espaciales detalladas está
+        en desarrollo.</b>
         
       </p>
           
@@ -129,41 +147,41 @@
         <div class="detail-metrics" id="detail-metrics"></div>
         <div id="chart-detail-comparison"></div>
       </div>
-       <div class="card card-downloads">
-      <details class="downloads-dropdown">
-        <summary>
-          Descargar datos
-        </summary>
-        <p class="download-note">
-          Archivos vectoriales y tabulares para su análisis en QGIS/ArcGIS o Python/Excel.
-        </p>
-        <div class="download-links">
-          <a href="data/abrae_web.geojson" download>
-            Vectoriales de ABRAEs (GeoJSON)
-          </a>
-          <a href="data/summaries_by_abrae.csv" download>
-            Resumen por ABRAE individual (CSV)
-          </a>
-          <a href="data/summary_by_type.csv" download>
-            Resumen por categoría de ABRAE (CSV)
-          </a>
-          <a href="data/rankings.csv" download>
-            Rankings (CSV)
-          </a>
-          <a
-            href="https://github.com/leomed512/venezuela_LUC_2017_2024/releases/download/v1.0.0/venezuela_landcover_2017.tif"
-            target="_blank"
-          >
-            Land cover 2017 (GeoTIFF - GitHub Release)
-          </a>
-          <a
-            href="https://github.com/leomed512/venezuela_LUC_2017_2024/releases/download/v1.0.0/venezuela_landcover_2024.tif"
-            target="_blank"
-          >
-            Land cover 2024 (GeoTIFF - GitHub Release)
-          </a>
-        </div>
-      </details>
+       <div class="card card-downloads" id="downloads">
+        <details class="downloads-dropdown">
+          <summary>
+            Descargar datos
+          </summary>
+          <p class="download-note">
+            Archivos vectoriales y tabulares para su análisis en QGIS/ArcGIS o Python/Excel.
+          </p>
+          <div class="download-links">
+            <a href="data/abrae_web.geojson" download>
+              Vectoriales de ABRAEs (GeoJSON)
+            </a>
+            <a href="data/summaries_by_abrae.csv" download>
+              Resumen por ABRAE individual (CSV)
+            </a>
+            <a href="data/summary_by_type.csv" download>
+              Resumen por categoría de ABRAE (CSV)
+            </a>
+            <a href="data/rankings.csv" download>
+              Rankings (CSV)
+            </a>
+            <a
+              href="https://github.com/leomed512/venezuela_LUC_2017_2024/releases/download/v1.0.0/venezuela_landcover_2017.tif"
+              target="_blank"
+            >
+              Land cover 2017 (GeoTIFF - GitHub Release)
+            </a>
+            <a
+              href="https://github.com/leomed512/venezuela_LUC_2017_2024/releases/download/v1.0.0/venezuela_landcover_2024.tif"
+              target="_blank"
+            >
+              Land cover 2024 (GeoTIFF - GitHub Release)
+            </a>
+          </div>
+        </details>
     </div>
     </aside>
     

@@ -41,15 +41,57 @@
         </a>
       </p>
       <p class="intro-text">
-        Las métricas representan <b>cambios netos</b> en la superficie de cobertura. Valores cercanos a cero
-        no implican ausencia de dinámica territorial: pérdidas en una zona pueden ser compensadas por
-        regeneración en otra dentro de la misma ABRAE. <b> El análisis de transiciones espaciales detalladas está
-        en desarrollo.</b>
-        
+        Las métricas representan <b>cambios netos</b> calculados sobre el área comparable observada
+        entre 2017 y 2024. Para evitar interpretar nubes o píxeles sin datos como cambios reales,
+        se excluyen del análisis los píxeles clasificados como nube/no-data en cualquiera de los dos años.
+        Valores cercanos a cero no implican ausencia de dinámica territorial: pérdidas en una zona pueden
+        ser compensadas por regeneración en otra dentro de la misma ABRAE. <br>
+        <b>El análisis de transiciones espaciales detalladas está en desarrollo.</b>
       </p>
-          
-    </div>
+          <div class="card card-help">
+      <details class="help-dropdown">
+        <summary>¿Cómo usar este visor?</summary>
 
+        <div class="help-content">
+          <p>
+            Este mapa permite explorar cambios de cobertura del suelo dentro de las ABRAEs
+            de Venezuela entre 2017 y 2024.
+          </p>
+
+          <ul>
+            <li>
+              Usa <b>Métrica</b> para cambiar el análisis: pérdida de bosque,
+              ganancia agrícola o expansión urbana.
+            </li>
+            <li>
+              Usa <b>Tipo de ABRAE</b> para filtrar parques nacionales, reservas forestales,
+              monumentos naturales u otras categorías.
+            </li>
+            <li>
+              Activa <b>2017</b> o <b>2024</b> para ver los mapas de cobertura original (rasters clasificados de Esri)
+              debajo de las ABRAEs.
+            </li>
+            <li>
+              Pasa el cursor sobre un polígono para ver un resumen rápido.
+              Haz clic para abrir el detalle completo en la barra lateral.
+            </li>
+            <li>
+              El panel derecho muestra el Top 10 y la comparación por tipo según la métrica seleccionada.
+            </li>
+            <li>
+              En el visor puedes activar capas raster, vectoriales (ABRAEs), y mapas base.
+            </li>
+          </ul>
+
+          <p class="help-note">
+            Las métricas de cambio se calculan solo sobre píxeles comparables entre 2017 y 2024.
+            Si una ABRAE muestra una alerta de confiabilidad, interpreta el resultado con más cautela.
+          </p>
+        </div>
+      </details>
+    </div>
+    </div>
+    
   </header>
 
   <nav class="controls-bar">
@@ -153,7 +195,10 @@
             Descargar datos
           </summary>
           <p class="download-note">
-            Archivos vectoriales y tabulares para su análisis en QGIS/ArcGIS o Python/Excel.
+            Archivos vectoriales y tabulares para su análisis en QGIS/ArcGIS o Python/Excel. <br><br>
+            Los archivos descargables contienen los indicadores corregidos usados en este visor.
+            Incluyen columnas de calidad como área comparable, porcentaje excluido por nubes/no-data
+            y alerta de confiabilidad temporal.
           </p>
           <div class="download-links">
             <a href="data/abrae_web.geojson" download>

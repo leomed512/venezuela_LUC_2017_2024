@@ -1,216 +1,216 @@
-SITE_ID,NAME_ENG,DESIG,forest_loss_ha,agriculture_gain_ha,urban_gain_ha,forest_2017_ha,forest_2024_ha,total_area_ha,forest_loss_pct
-20069,Cuenca Alta y Media del Río Pao,Zona Protectora (ZP),43297.82,93.63,0.0,140647.13,97349.31,273532.53,30.78
-146676,Delta del Orinoco (Mariusa),Parque Nacional (PN),36219.95,0.0,0.0,275621.27,239401.32,320507.51,13.14
-20070,Macizo Montañoso del Turimiquire,Zona Protectora (ZP),31986.7,0.0,0.0,366879.83,334893.13,509360.07,8.72
-555705237,"Distritos Obispos, Sosa, Rojas y Bolívar del Estado Barinas, y Guanare y Guanarito del Estado Portuguesa (Guanare - Masparro)",Reserva Nacional Hidraúlica (RNH),29264.47,15143.98,1991.54,396212.46,366947.99,905390.62,7.39
-20077,Cuenca Alta del Río Cojedes,Zona Protectora (ZP),28814.17,0.0,1439.92,331958.7,303144.53,523826.2,8.68
-20067,Piedemonte Norte Cordillera Andina y Serranía Misoa Trujillo,Zona Protectora (ZP),23954.66,0.0,207.16,420540.37,396585.71,647061.09,5.7
-101093,Márgenes del Río Guárico,Área Boscosa Bajo Protección (ABBP),22451.57,3881.86,20.07,67482.14,45030.57,165524.06,33.27
-101089,Pueblito,Área Boscosa Bajo Protección (ABBP),20602.44,930.87,6.01,58942.29,38339.85,97162.85,34.95
-101111,Barbacas,Área Boscosa Bajo Protección (ABBP),19857.99,10688.23,31.04,65650.65,45792.66,222500.05,30.25
-101113,Márgenes del Río Güere,Área Boscosa Bajo Protección (ABBP),18408.48,0.0,0.0,49848.97,31440.49,93198.52,36.93
-20078,Cuencas de los Ríos Guanare - Boconó - Tucupido - Masparro - La Yuca,Zona Protectora (ZP),17616.65,0.0,992.54,301904.66,284288.01,415889.65,5.84
-20081,"Sur - Este del Lago de Maracaibo, Santo Domingo - Motatan",Zona Protectora (ZP),16804.27,0.0,1173.27,211826.42,195022.15,364717.51,7.93
-10779,Imataca,Reserva Forestal (RF),14641.57,10.62,3080.97,3627913.54,3613271.97,3718976.75,0.4
-20091,"Distritos Maturín. Cedeño, Piar y Caripe del Estado Monagas y de los Distritos Mates y Rivero del Estado Sucre",Reserva Nacional Hidraúlica (RNH),14525.39,0.0,427.26,93888.1,79362.71,189821.63,15.47
-101107,El Baúl - Corralito,Área Boscosa Bajo Protección (ABBP),14281.81,0.0,0.0,66098.05,51816.24,120755.34,21.61
-20073,Macizo de Nirgua,Zona Protectora (ZP),14257.44,0.0,123.39,129884.17,115626.73,153752.44,10.98
-10784,Ticoporo,Reserva Forestal (RF),12987.1,18120.91,607.67,26689.46,13702.36,188259.7,48.66
-101109,Río Los Remedios,Área Boscosa Bajo Protección (ABBP),12969.98,0.0,0.0,68577.69,55607.71,81004.79,18.91
-20088,Zona Sur Lago de Maracaibo,Reserva Nacional Hidraúlica (RNH),12967.65,0.0,3025.38,456729.7,443762.05,879248.47,2.84
-101100,Río Orituco,Área Boscosa Bajo Protección (ABBP),12681.54,4513.64,30.59,23837.91,11156.37,98807.7,53.2
-10783,Caparo,Reserva Forestal (RF),10637.75,1036.02,207.81,53947.99,43310.24,175224.51,19.72
-67615,Tirgua (General Manuel Manrique),Parque Nacional (PN),10620.83,0.1,0.0,81982.34,71361.51,90289.83,12.96
-20076,Cuenca Alta de los Ríos Matícora y Cocuiza,Zona Protectora (ZP),10415.31,0.0,0.0,160361.54,149946.23,259209.32,6.49
-555705215,San Pedro,Reserva Forestal (RF),10068.21,0.0,251.38,726875.37,716807.16,768261.48,1.39
-61899,Cuenca Alta y Media del Río Orituco,Zona Protectora (ZP),9609.79,0.0,0.0,16441.76,6831.97,41079.57,58.45
-10774,"Suelos, Bosques y Aguas en la cuenca del río Guárico",Zona Protectora (ZP),9597.45,0.0,0.0,16582.36,6984.91,37602.62,57.88
-20074,Sierra de Bobare,Zona Protectora (ZP),8685.72,457.52,74.83,85060.58,76374.86,100844.32,10.21
-32731,Sierra de Aroa,Zona Protectora (ZP),7862.65,0.0,89.63,105963.01,98100.36,114365.27,7.42
-101097,Achaguas,Área Boscosa Bajo Protección (ABBP),7101.86,1356.32,31.31,23604.07,16502.21,90544.04,30.09
-322,"Páramos de Tamá, Cobre y Judio",Parque Nacional (PN),6578.53,62.45,0.0,113302.83,106724.3,120950.77,5.81
-10786,Selva de Guarapiche,Reserva Forestal (RF),6324.67,0.01,0.0,287638.33,281313.66,357926.94,2.2
-101106,Caño Caballo,Área Boscosa Bajo Protección (ABBP),5924.18,110.99,0.56,16707.74,10783.56,54794.59,35.46
-555705212,Cuenca Alta del Río Tocuyo Sector Dos Cerrito,Zona Protectora (ZP),5856.58,0.0,301.41,52209.85,46353.27,72563.15,11.22
-315,Aguaro - Guariquito,Parque Nacional (PN),5247.42,699.61,0.0,30910.34,25662.92,580074.11,16.98
-101116,Chivapure - Cuchivero,Área Boscosa Bajo Protección (ABBP),5127.32,0.0,0.0,543613.73,538486.41,613265.89,0.94
-101099,Santo Domingo,Área Boscosa Bajo Protección (ABBP),4977.85,5144.09,33.3,36169.82,31191.97,148409.88,13.76
-32733,Cuenta Alta y Media Río Machango,Zona Protectora (ZP),4913.5,0.0,0.0,40803.12,35889.62,58328.55,12.04
-101124,Piedemonte Portuguesa,Área Boscosa Bajo Protección (ABBP),4726.41,0.0,0.0,27034.34,22307.93,53681.3,17.48
-555705211,Cuenca Alta del Río Tocuyo Sector Curarigua,Zona Protectora (ZP),4576.9,0.0,160.1,37965.49,33388.59,74794.75,12.06
-101121,Pedernales,Área Boscosa Bajo Protección (ABBP),4338.0,0.0,0.0,234660.89,230322.89,253806.89,1.85
-101160,Burro Negro,Zona Protectora (ZP),4111.83,0.0,0.0,44922.59,40810.76,53760.41,9.15
-10769,Burro Negro,Reserva Nacional Hidraúlica (RNH),4111.83,0.0,0.0,44922.59,40810.76,53760.41,9.15
-101088,Tiznados,Área Boscosa Bajo Protección (ABBP),3981.26,425.62,0.02,9583.52,5602.26,20124.19,41.54
-101136,Río Viejo - San Camilo,Parque Nacional (PN),3813.83,577.92,34.83,24814.1,21000.27,42518.54,15.37
-323,Henri Pittier,Parque Nacional (PN),3784.3,0.0,52.82,92364.64,88580.34,107055.84,4.1
-101103,San Francisco de la Paragua,Área Boscosa Bajo Protección (ABBP),3781.72,147.28,3.44,48605.94,44824.22,68694.93,7.78
-10782,San Camilo,Reserva Forestal (RF),3773.68,1591.5,135.6,28846.39,25072.71,66856.64,13.08
-321,Sierra Nevada,Parque Nacional (PN),3446.52,0.0,0.0,158156.56,154710.04,248537.8,2.18
-101143,Macizo Cuao - Sipapo y Cerro Moriche,Monumento Natural (MN),3428.12,1.16,0.0,1140973.01,1137544.89,1226830.79,0.3
-10776,Del Área Metropolitana de Caracas,Zona Protectora (ZP),3293.0,0.0,907.55,54934.45,48348.45,66831.99,5.99
-30023,Ciénagas de Juan Manuel,Parque Nacional (PN),3251.58,0.0,0.0,141024.81,134521.65,168917.44,2.31
-101167,Cuenca del Río Castán,Zona Protectora (ZP),3068.9,0.0,123.98,22535.5,19466.6,31354.92,13.62
-101114,San Fernando,Área Boscosa Bajo Protección (ABBP),2961.28,1520.92,0.0,7857.87,4896.59,37294.46,37.69
-10775,"Cuenca de los Ríos Guasare, Socuy y Cachiri",Zona Protectora (ZP),2855.33,0.0,0.0,268253.82,265398.49,303653.71,1.06
-101091,El Yagual,Área Boscosa Bajo Protección (ABBP),2825.83,34.39,15.65,12858.42,10032.59,41439.04,21.98
-20072,Cuenca Hidrográfica del Río Yacambu,Zona Protectora (ZP),2621.27,0.0,12.13,24618.0,21996.73,25383.83,10.65
-20068,Región Lago de Maracaibo (Sierra de Perijá) (Polígonos 1 y 2),Zona Protectora (ZP),2503.34,0.0,0.0,192634.41,187627.73,256741.92,1.3
-10788,Río Tocuyo,Reserva Forestal (RF),2477.21,0.0,38.4,37544.24,35067.03,51256.96,6.6
-101090,Río Orichuna,Área Boscosa Bajo Protección (ABBP),2379.41,54.28,0.0,19297.76,16918.35,43676.2,12.33
-30635,De la Sierra de San Luis,Zona Protectora (ZP),2346.28,0.0,260.38,79822.48,77476.2,103225.16,2.94
-555705216,Caño Blanco,Área Boscosa Bajo Protección (ABBP),2011.6,1571.08,0.0,38866.11,36854.51,68090.75,5.18
-20082,Río Torbes y alrededores,Zona Protectora (ZP),1993.09,0.0,114.48,8228.72,6235.63,11684.33,24.22
-101127,Río Tucurere,Área Boscosa Bajo Protección (ABBP),1895.0,421.13,111.07,47170.22,45275.22,72716.63,4.02
-327,Waraira Repano,Parque Nacional (PN),1866.87,0.0,417.83,77730.91,75864.04,81091.28,2.4
-555705241,Teta de Niquitao - Guirigay,Monumento Natural (MN),1811.75,133.23,0.0,19094.31,15470.81,24085.54,9.49
-332,Terepaima,Parque Nacional (PN),1559.34,0.0,8.81,17198.25,15638.91,18499.22,9.07
-338,Cerro El Copey - Jóvito Villalba,Parque Nacional (PN),1510.55,0.0,16.74,5678.8,4168.25,7411.71,26.6
-101102,Río Guanipa,Área Boscosa Bajo Protección (ABBP),1500.55,0.0,6.81,113495.45,111994.9,116963.93,1.32
-30031,Dr. Amenodoro Rangel Lamus (Chorro El Indio),Parque Nacional (PN),1389.33,0.0,31.81,13865.61,12476.28,14713.11,10.02
-334,Macarao,Parque Nacional (PN),1389.15,0.0,62.76,13445.9,12056.75,14687.91,10.33
-20083,Del Área Metropolitana de la Ciudad de San Cristobal,Zona Protectora (ZP),1377.54,0.0,87.68,20465.63,17710.55,27809.33,6.73
-101139,Cerro Camani y Cerro Morrocoy,Monumento Natural (MN),1370.72,1.92,0.0,86445.16,85074.44,115930.66,1.59
-101120,Matícora y Cocuiza,Área Boscosa Bajo Protección (ABBP),1320.41,0.0,1.08,28501.54,27181.13,42871.27,4.63
-555705219,Cerro Machado - El Silencio,Reserva Nacional Hidraúlica (RNH),1285.24,0.0,55.43,5735.81,4450.57,8623.58,22.41
-555705213,El Frío,Reserva Forestal (RF),1151.24,0.0,4.57,76072.94,74921.7,90966.33,1.51
-101108,Botucal,Área Boscosa Bajo Protección (ABBP),1102.65,1406.39,13.06,4488.74,3386.09,13739.08,24.56
-101140,Sierra Marutani,Monumento Natural (MN),1074.02,0.0,0.0,212169.6,211095.58,213936.21,0.51
-32732,Cuenca Hidrográfica del Embalse El Cigarrón,Zona Protectora (ZP),996.9,192.85,0.0,12254.75,11257.85,46026.89,8.13
-307,Cerro de María Lionza,Monumento Natural (MN),977.16,0.0,1.78,11577.75,10600.59,11864.23,8.44
-555705214,El Dorado - Tumeremo,Reserva Forestal (RF),947.17,0.27,326.62,63743.29,62796.12,66135.68,1.49
-20084,De la Ciudad de Rubio,Zona Protectora (ZP),884.59,0.0,157.63,21792.97,20908.38,28101.33,4.06
-335,Yacambú,Parque Nacional (PN),853.34,0.0,0.0,24388.7,23535.36,24521.62,3.5
-324,Mochima,Parque Nacional (PN),842.16,0.0,0.0,28804.81,27962.65,44780.58,2.92
-555705217,Santa Marta,Área Boscosa Bajo Protección (ABBP),834.79,374.41,15.11,10573.94,9739.15,37980.76,7.89
-101161,Cuenca Hidrográfica del Río Pedregal,Zona Protectora (ZP),759.75,18.37,9.41,70664.79,69905.04,196113.73,1.08
-20092,Cuenca Hidrográfica del Río Pedregal,Reserva Nacional Hidraúlica (RNH),750.97,18.4,9.41,70553.14,69802.17,195877.54,1.06
-101166,Cuenca Hidrográfica del Río Cataniapo,Zona Protectora (ZP),743.99,21.5,0.0,146202.55,145458.56,152977.81,0.51
-30032,Cerro Saroche,Parque Nacional (PN),733.55,3.37,0.0,1882.35,1148.8,36178.51,38.97
-101104,Nirgua - Aroa,Área Boscosa Bajo Protección (ABBP),629.02,0.0,0.0,51625.47,50996.45,68314.66,1.22
-10781,Sipapo,Reserva Forestal (RF),623.59,424.93,0.0,1787760.85,1787137.26,1976898.17,0.03
-20096,Cuenca del Río Chuspita,Zona Protectora (ZP),622.85,0.0,47.67,5578.15,4955.3,5879.08,11.17
-101128,Río Guanare Viejo,Área Boscosa Bajo Protección (ABBP),621.65,347.83,46.93,3490.56,2868.91,18648.06,17.81
-30643,Área situada en el Dtto Rojas del Estado Barinas en el margen izquierdo del río Masparro,Zona Protectora (ZP),605.5,162.77,0.48,2201.79,1596.29,6322.29,27.5
-101126,La Danta,Área Boscosa Bajo Protección (ABBP),584.22,201.16,80.54,2811.35,2227.13,13018.07,20.78
-10778,Litoral Central,Zona Protectora (ZP),580.63,15.34,181.22,37271.69,36691.06,38877.75,1.56
-555705210,Rio Parguaza,Reserva Forestal (RF),561.93,0.02,0.0,60117.57,59555.64,66007.15,0.93
-30636,Del Área Metropolitana de la Ciudad de Barquisimeto,Zona Protectora (ZP),531.15,0.0,48.69,9673.58,7548.99,41759.47,5.49
-555705267,Subcuenca del Río Momboy,Zona Protectora (ZP),479.67,166.32,70.18,5127.54,4647.87,12482.6,9.35
-555705218,Fundo Flamerich,Área Boscosa Bajo Protección (ABBP),386.8,0.0,0.0,12164.78,11777.98,13059.72,3.18
-555705222,Fundo Paisolandia,Área Boscosa Bajo Protección (ABBP),380.78,9.24,18.96,5712.25,5331.47,6905.6,6.67
-2246,Medanos de Coro,Parque Nacional (PN),351.33,0.0,0.0,1836.81,1485.48,16659.29,19.13
-20054,Dinira,Parque Nacional (PN),312.95,0.0,2.72,39806.34,39493.39,45550.29,0.79
-101130,Río Icabaru,Reserva Nacional Hidraúlica (RNH),295.5,0.0,0.0,38967.39,38671.89,39253.11,0.76
-311,Cerros Matasiete y Guayamurí,Monumento Natural (MN),245.71,0.37,3.12,812.84,567.13,1646.41,30.23
-101122,El Choco,Área Boscosa Bajo Protección (ABBP),214.92,0.88,48.15,15662.31,15447.39,16016.23,1.37
-325,Guatopo,Parque Nacional (PN),213.86,0.0,3.3,114277.91,114064.05,121942.46,0.19
-19290,Arístides Rojas (Morros de San Juan),Monumento Natural (MN),211.84,0.0,0.0,928.41,716.57,2734.52,22.82
-101112,El Clavo,Área Boscosa Bajo Protección (ABBP),196.06,538.63,41.3,972.56,776.5,9398.88,20.16
-20087,Distrito Páez del Estado Apure,Reserva Nacional Hidraúlica (RNH),181.27,34.36,0.7,42967.49,42786.22,47879.47,0.42
-20086,Subcuenca de la Quebrada Las González,Zona Protectora (ZP),163.45,45.71,50.42,3536.71,3373.26,11001.14,4.62
-555705284,Cuenca del Río Sanchón,Zona Protectora (ZP),159.9,0.0,6.79,6931.6,6771.7,8601.56,2.31
-19287,Juan German Rocío (Cerro Platillón),Monumento Natural (MN),157.06,0.0,0.66,6533.67,6376.61,7958.11,2.4
-67614,El Guache,Parque Nacional (PN),154.28,0.0,0.0,14624.57,14470.29,15363.17,1.05
-555705238,Páramo La Laja,Reserva Nacional Hidraúlica (RNH),145.06,0.0,18.06,1698.99,1553.93,2217.65,8.54
-15135,General Cruz Carrillo en Guaramacal,Parque Nacional (PN),116.05,0.0,0.0,19879.07,19763.02,19997.45,0.58
-30639,Subcuenca Río Mucujún,Zona Protectora (ZP),111.92,0.0,35.46,6900.46,6788.54,19162.32,1.62
-101119,Santa Rosa,Área Boscosa Bajo Protección (ABBP),109.83,0.0,0.0,44588.5,44478.67,98839.49,0.25
-101110,Delgadito,Área Boscosa Bajo Protección (ABBP),109.53,153.96,20.91,905.05,795.52,3336.51,12.1
-30645,Cuenca Hidrográfica del Embalse La Mariposa,Zona Protectora (ZP),106.53,0.64,43.79,2208.05,2101.52,2824.46,4.82
-20095,Valle del Algodonal,Zona Protectora (ZP),100.4,0.0,5.89,119.15,18.75,210.74,84.26
-101086,Páramo La Laja,Área Boscosa Bajo Protección (ABBP),100.13,0.0,6.9,2130.81,2030.68,2217.23,4.7
-20079,Cuenca de la Quebrada La Machiri,Zona Protectora (ZP),84.37,0.0,7.82,1422.22,1337.85,1673.52,5.93
-30644,Área que bordea la Laguna La Danta,Zona Protectora (ZP),80.76,114.41,9.09,293.61,212.85,2206.73,27.51
-337,Cueva de la Quebrada El Toro,Parque Nacional (PN),78.63,0.0,0.69,3534.17,3455.54,3842.2,2.22
-30634,Cuenca del Río Albarregas,Zona Protectora (ZP),74.88,3.94,64.54,7250.6,7175.72,10533.39,1.03
-555705281,"Franja de 100 metros de ancho a ambos márgenes de los ríos Guanare, Tucupido, Boconó, La Yuca y Masparro",Zona Protectora (ZP),70.34,119.96,7.61,6386.28,6034.59,20424.24,1.1
-336,Laguna de La Restinga,Parque Nacional (PN),59.37,0.0,0.62,75.65,16.28,11021.36,78.48
-20071,Mitar Nakichenovich,Zona Protectora (ZP),51.69,1.18,11.53,438.24,386.55,613.05,11.79
-555705236,San Pedro del Río,Reserva Nacional Hidraúlica (RNH),41.89,0.0,0.0,239.0,197.11,347.4,17.53
-30648,De La Tortuga Arrau,Zona Protectora (ZP),35.97,10.35,0.0,6624.54,6588.57,17543.7,0.54
-67612,Piedra Pintada,Monumento Natural (MN),30.2,0.0,0.0,609.14,578.94,1502.3,4.96
-4371,Cueva del Guácharo Alejandro de Humboldt,Monumento Natural (MN),23.37,0.0,0.65,657.25,633.88,870.34,3.56
-555705280,Area que bordea el estero situado en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),17.58,123.19,3.08,222.76,205.18,848.56,7.89
-30640,De las Ciudades de San Antonio- Ureña y Aguas Calientes,Zona Protectora (ZP),17.41,1.79,1.41,4847.48,4830.07,6315.19,0.36
-310,Laguna de Las Marites,Monumento Natural (MN),16.3,0.0,8.44,60.23,43.93,2622.88,27.06
-20065,Cerro Volcán,Zona Protectora (ZP),14.29,0.0,25.13,353.11,338.82,548.31,4.05
-67610,Meseta La Galera,Monumento Natural (MN),11.61,0.0,0.0,27.49,15.88,61.2,42.23
-4372,Cerro Autana,Monumento Natural (MN),6.18,0.0,0.0,9083.84,9077.66,9081.78,0.07
-4363,Laguna de Urao,Monumento Natural (MN),5.63,0.0,0.0,13.78,8.15,44.51,40.86
-555705271,Playa Norte,Zona Protectora (ZP),5.3,0.0,3.78,211.62,206.32,288.45,2.5
-67611,Piedra La Tortuga,Monumento Natural (MN),5.07,17.56,0.0,86.21,81.14,468.86,5.88
-4369,Morros de Macaira,Monumento Natural (MN),3.83,0.0,0.0,81.15,77.32,83.19,4.72
-4373,Piedra de Cocuy,Monumento Natural (MN),0.12,0.0,0.0,1097.32,1097.2,1101.35,0.01
-30027,Pico Codazzi,Monumento Natural (MN),0.1,0.0,88.65,11380.75,11380.65,11770.25,0.0
-4370,"Cueva ""Alfredo Jahn""",Monumento Natural (MN),0.01,0.0,0.0,53.12,53.11,53.12,0.02
-318,Perijá,Parque Nacional (PN),0.0,0.0,3.29,251082.98,261384.73,284524.5,0.0
-317,Yapacana,Parque Nacional (PN),0.0,0.0,222.28,222170.48,223402.18,268572.3,0.0
-313,Canaima,Parque Nacional (PN),0.0,0.0,132.77,1911023.13,1948708.36,2816366.16,0.0
-555705221,Río Apure - Caparo,Área Boscosa Bajo Protección (ABBP),0.0,0.17,0.62,3512.54,3661.81,19096.72,0.0
-101087,Merejina,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,267706.75,268438.99,302283.58,0.0
-555705283,Macizo Parú - Euaja,Monumento Natural (MN),0.0,0.0,0.0,287814.5,291884.65,313524.5,0.0
-101145,Cerro Vinilla y Cerro Aratitiyope,Monumento Natural (MN),0.0,0.0,0.0,201160.51,201249.25,205360.23,0.0
-101146,Sierra Maigualida,Monumento Natural (MN),0.0,0.0,10.3,1776165.24,2008978.53,2039814.66,0.0
-555705242,Montecano,Monumento Natural (MN),0.0,140.5,0.0,691.63,1026.89,2575.03,0.0
-309,Cerro Santa Ana,Monumento Natural (MN),0.0,0.0,0.0,326.62,344.6,1976.32,0.0
-308,Las Tetas de María Guevara,Monumento Natural (MN),0.0,0.0,0.0,2.99,4.47,1494.49,0.0
-4374,Chorreras Las González,Monumento Natural (MN),0.0,0.0,0.0,120.18,122.53,130.45,0.0
-101144,Cerro Guanay,Monumento Natural (MN),0.0,0.0,0.0,20027.96,20056.64,35383.04,0.0
-101142,Sierra Unturán,Monumento Natural (MN),0.0,0.0,0.0,356029.14,357661.99,360040.18,0.0
-101123,Río Arauca - Güere,Área Boscosa Bajo Protección (ABBP),0.0,3.13,0.0,18155.09,19080.18,25724.01,0.0
-101141,Serranía Yutajé / Coro - coro,Monumento Natural (MN),0.0,20.36,0.0,90234.26,90887.2,109965.08,0.0
-101138,Cerro Ichum y Cerro Guanacoco,Monumento Natural (MN),0.0,0.0,0.0,957791.28,975235.01,978984.6,0.0
-101125,Río Tucuco,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,17119.36,19547.89,32309.66,0.0
-101148,Cerro Yaví,Monumento Natural (MN),0.0,0.01,0.0,17311.26,17543.26,27137.86,0.0
-101137,Cerro Guaiquinima,Monumento Natural (MN),0.0,0.0,2.73,635100.57,662213.22,679158.39,0.0
-101105,Libertad,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,9390.63,10398.94,39533.76,0.0
-555705240,Cadena de Tepuyes Orientales: Llu (Tramen) Tepuy. Karaurín Tepuy. Uei Tepuy. Yuruaní Tepuy. Kukenán (Mataui) Tepuy. Wadakapiapué Tepuy.,Monumento Natural (MN),0.0,13.12,0.0,56101.85,58819.13,143416.1,0.0
-101117,Río Tarra,Área Boscosa Bajo Protección (ABBP),0.0,47.47,33.59,36287.89,37263.83,61828.89,0.0
-101150,Abra Río Frío,Monumento Natural (MN),0.0,0.18,0.0,1136.14,1202.58,1326.98,0.0
-101149,Cerro Tamacuari y Serranía Tapirapecó,Monumento Natural (MN),0.0,0.0,0.0,128723.21,131094.75,131233.96,0.0
-101118,El Amparo,Área Boscosa Bajo Protección (ABBP),0.0,256.64,0.0,15547.2,17069.13,39196.2,0.0
-101147,Cerro Venamo,Monumento Natural (MN),0.0,0.0,0.0,3422.26,3468.0,5611.68,0.0
-101129,Cerro Machado - El Silencio,Área Boscosa Bajo Protección (ABBP),0.0,0.0,11.97,5197.67,7352.68,8097.0,0.0
-10780,Caura,Parque Nacional (PN),0.0,0.0,22.59,6900110.61,7334858.53,7522408.36,0.0
-10767,San Esteban,Parque Nacional (PN),0.0,0.0,0.0,33455.66,33671.3,40987.75,0.0
-4367,Serranía La Neblina,Parque Nacional (PN),0.0,0.0,0.0,1155564.45,1165759.23,1177876.49,0.0
-4366,Duida - Marahuaca,Parque Nacional (PN),0.0,0.0,0.0,377995.29,384770.05,393396.8,0.0
-2247,Morrocoy,Parque Nacional (PN),0.0,0.0,38.91,4481.98,4488.81,8578.91,0.0
-30033,Dr. Antonio José Uzcátegui Burguera (Sierra de la Culata),Parque Nacional (PN),0.0,0.0,0.0,90435.52,98385.5,197098.8,0.0
-30026,Paríma - Tapirapeco,Parque Nacional (PN),0.0,20.83,0.0,3841961.54,3850776.85,3905115.11,0.0
-30024,Turuépano,Parque Nacional (PN),0.0,0.43,0.0,47290.44,49246.32,72072.43,0.0
-19286,Santos Luzardo,Parque Nacional (PN),0.0,13470.47,0.0,66433.06,71382.12,561809.29,0.0
-20093,Valle del Quíbor,Reserva Nacional Hidraúlica (RNH),0.0,475.08,679.48,829.4,1864.98,62558.34,0.0
-20066,Distrito Guaicaipuro  (Los Teques),Zona Protectora (ZP),0.0,11.42,24.13,704.89,706.35,1412.72,0.0
-10772,Sur del Estado Bolívar,Zona Protectora (ZP),0.0,1916.21,187.24,4562093.59,4577761.31,4904982.44,0.0
-10787,La Paragua,Reserva Forestal (RF),0.0,0.94,74.41,663550.64,672376.44,845549.71,0.0
-10785,Turén,Reserva Forestal (RF),0.0,440.53,114.27,7726.49,8929.83,96932.19,0.0
-20090,Cuenca Hidrográfica del Río Capravera,Reserva Nacional Hidraúlica (RNH),0.0,0.0,0.0,741.24,821.46,3206.91,0.0
-20089,Cuenca del Río Sanchón,Reserva Nacional Hidraúlica (RNH),0.0,0.0,0.0,8525.87,8598.01,8599.48,0.0
-555705277,Isla Cubagua,Reserva Forestal (RF),0.0,0.0,0.0,0.0,0.0,0.0,0.0
-555705235,Aguas Calientes,Reserva Nacional Hidraúlica (RNH),0.0,0.0,23.39,1266.09,1367.32,2836.21,0.0
-19280,Loma de León,Monumento Natural (MN),0.0,0.64,55.44,675.55,936.83,7661.32,0.0
-101115,Río Aricuaisá,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,6913.61,8429.59,15604.9,0.0
-101135,Tapo - Caparo,Parque Nacional (PN),0.0,0.0,40.31,146177.18,150755.97,204399.36,0.0
-555705279,Área que bordea la Laguna situada en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),0.0,218.29,4.87,177.68,209.79,1181.67,0.0
-555705278,Área situada en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),0.0,293.28,0.5,288.46,342.49,1218.75,0.0
-555705272,"Río Umuquena (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 1)",Zona Protectora (ZP),0.0,0.0,25.04,7849.79,8772.77,25744.55,0.0
-555705270,"Cuenca de los Ríos Escalante y Orope (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 2)",Zona Protectora (ZP),0.0,0.0,1330.15,133189.07,146253.83,266461.94,0.0
-555705269,"Cuenca del Río Mucujepe (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 3)",Zona Protectora (ZP),0.0,0.0,575.77,14025.41,16699.74,28562.29,0.0
-555705268,Embalse Mapara,Zona Protectora (ZP),0.0,0.0,0.0,2321.56,3078.62,12538.94,0.0
-555705266,Área Metropolitana Barcelona - Pto. La Cruz - Guanta,Zona Protectora (ZP),0.0,0.0,0.0,11417.55,11864.76,16639.91,0.0
-101165,Laguna Blanca o del Morro,Zona Protectora (ZP),0.0,0.0,1.45,7.69,10.07,130.01,0.0
-101162,Cuenca Hidrográfica del Río Capravera,Zona Protectora (ZP),0.0,0.0,0.0,741.21,821.46,3206.8,0.0
-19284,Juan Crisóstomo Falcón en la Sierra de San Luis,Parque Nacional (PN),0.0,0.0,7.92,18991.49,19108.81,19226.29,0.0
-330,Yurubí,Parque Nacional (PN),0.0,0.0,6.57,23272.1,23727.51,24187.9,0.0
-328,Península de Paria,Parque Nacional (PN),0.0,0.0,0.03,31798.43,34452.02,34820.66,0.0
-2245,Archipiélago Los Roques,Parque Nacional (PN),0.0,0.0,3.79,109.47,161.46,5624.09,0.0
-333,El Guácharo,Parque Nacional (PN),0.0,0.0,25.14,56694.81,57118.44,61608.84,0.0
-30647,Cuenca Hidrográfica del Río Capaz (Capazón),Zona Protectora (ZP),0.0,0.0,93.31,26251.41,29076.06,45052.56,0.0
-30646,"Islas e Islotes, Laguna, Cabos y Puntas",Zona Protectora (ZP),0.0,0.0,0.38,54.35,27.73,1462.39,0.0
-30641,La Pereza,Zona Protectora (ZP),0.0,0.0,32.39,150.68,151.17,328.9,0.0
-30638,Del Área Metropolitana de Maracaibo,Zona Protectora (ZP),0.0,0.0,0.0,2310.09,2810.45,20912.37,0.0
-30637,De la Ciudad de Coro,Zona Protectora (ZP),0.0,0.0,0.0,4038.62,5093.23,19620.47,0.0
-19285,General Juan Pablo Peñaloza en los Páramos del Batallón y La Negra,Parque Nacional (PN),0.0,0.0,0.0,53315.01,63437.62,87981.95,0.0
-331,Laguna de Tacarigua,Parque Nacional (PN),0.0,12.91,2.86,7995.92,8170.38,18924.09,0.0
+SITE_ID,NAME_ENG,DESIG,forest_loss_ha,agriculture_gain_ha,urban_gain_ha,forest_2017_ha,forest_2024_ha,total_area_ha,forest_loss_pct,cloud_2017_ha,cloud_2024_ha,cloud_diff_ha,valid_common_ha,valid_common_pct,excluded_pct,cloud_contamination_flag
+20069,Cuenca Alta y Media del Río Pao,Zona Protectora (ZP),43375.98,93.33,0.0,140647.06,97271.08,273364.53,30.84,168.0,0.11,-167.89,273364.53,99.94,0.06,False
+146676,Delta del Orinoco (Mariusa),Parque Nacional (PN),36268.58,0.0,0.0,275619.97,239351.39,320453.9,13.16,53.61,1.77,-51.84,320453.9,99.98,0.02,False
+20070,Macizo Montañoso del Turimiquire,Zona Protectora (ZP),32504.63,0.0,0.0,366840.63,334336.0,508535.4,8.86,840.76,73.24,-767.52,508535.4,99.82,0.18,False
+20077,Cuenca Alta del Río Cojedes,Zona Protectora (ZP),30948.94,0.0,1362.29,331805.69,300856.75,521089.81,9.33,2793.22,232.22,-2561.0,521089.81,99.43,0.57,False
+20088,Zona Sur Lago de Maracaibo,Reserva Nacional Hidraúlica (RNH),28539.54,0.0,2230.62,454253.37,425713.83,856872.73,6.28,40305.8,21196.27,-19109.53,856872.73,95.16,4.84,False
+20067,Piedemonte Norte Cordillera Andina y Serranía Misoa Trujillo,Zona Protectora (ZP),28297.61,0.0,62.64,420199.67,391902.06,642072.94,6.73,6992.98,2410.24,-4582.74,642072.94,98.86,1.14,False
+555705237,"Distritos Obispos, Sosa, Rojas y Bolívar del Estado Barinas, y Guanare y Guanarito del Estado Portuguesa (Guanare - Masparro)",Reserva Nacional Hidraúlica (RNH),26331.28,15137.4,1976.02,387241.47,360910.19,899120.02,6.8,11066.7,14007.28,2940.58,899120.02,97.79,2.21,False
+101093,Márgenes del Río Guárico,Área Boscosa Bajo Protección (ABBP),22453.64,3877.22,19.02,67482.14,45028.5,165486.95,33.27,37.11,0.0,-37.11,165486.95,99.98,0.02,False
+10772,Sur del Estado Bolívar,Zona Protectora (ZP),21787.47,1903.89,98.57,4561287.5,4539500.03,4865548.9,0.48,41861.73,3377.84,-38483.89,4865548.9,99.13,0.87,False
+101089,Pueblito,Área Boscosa Bajo Protección (ABBP),20602.44,930.87,6.01,58942.29,38339.85,97162.85,34.95,0.0,0.0,0.0,97162.85,100.0,0.0,False
+101111,Barbacas,Área Boscosa Bajo Protección (ABBP),19858.22,10687.01,30.13,65650.65,45792.43,222493.17,30.25,6.88,0.0,-6.88,222493.17,100.0,0.0,False
+101113,Márgenes del Río Güere,Área Boscosa Bajo Protección (ABBP),18408.5,0.0,0.0,49848.97,31440.47,93188.82,36.93,9.7,0.0,-9.7,93188.82,99.99,0.01,False
+20078,Cuencas de los Ríos Guanare - Boconó - Tucupido - Masparro - La Yuca,Zona Protectora (ZP),17386.6,0.0,1002.08,296594.25,279207.65,410591.02,5.86,8371.88,8641.12,269.24,410591.02,96.72,3.28,False
+10779,Imataca,Reserva Forestal (RF),17129.81,8.44,2952.9,3627722.57,3610592.76,3715871.45,0.47,3232.54,368.42,-2864.12,3715871.45,99.91,0.09,False
+20081,"Sur - Este del Lago de Maracaibo, Santo Domingo - Motatan",Zona Protectora (ZP),17038.37,0.0,1054.74,210862.52,193824.15,362923.55,8.08,2774.36,2460.58,-313.78,362923.55,98.84,1.16,False
+101135,Tapo - Caparo,Parque Nacional (PN),15172.58,0.0,9.56,145757.86,130585.28,180974.88,10.41,25479.76,2503.61,-22976.15,180974.88,87.47,12.53,True
+20073,Macizo de Nirgua,Zona Protectora (ZP),15009.14,0.0,106.53,129874.46,114865.32,152840.31,11.56,916.31,20.7,-895.61,152840.31,99.39,0.61,False
+20091,"Distritos Maturín. Cedeño, Piar y Caripe del Estado Monagas y de los Distritos Mates y Rivero del Estado Sucre",Reserva Nacional Hidraúlica (RNH),14545.98,0.0,341.23,93878.06,79332.08,189593.22,15.49,230.51,39.23,-191.28,189593.22,99.86,0.14,False
+101107,El Baúl - Corralito,Área Boscosa Bajo Protección (ABBP),14281.81,0.0,0.0,66098.05,51816.24,120755.34,21.61,0.0,0.0,0.0,120755.34,100.0,0.0,False
+10784,Ticoporo,Reserva Forestal (RF),13013.4,17995.07,519.27,26689.45,13676.05,187841.96,48.76,417.75,0.05,-417.7,187841.96,99.78,0.22,False
+101109,Río Los Remedios,Área Boscosa Bajo Protección (ABBP),12970.01,0.0,0.0,68577.69,55607.68,81002.34,18.91,2.45,0.0,-2.45,81002.34,100.0,0.0,False
+101100,Río Orituco,Área Boscosa Bajo Protección (ABBP),12682.05,4513.4,30.53,23837.91,11155.86,98804.18,53.2,3.52,0.0,-3.52,98804.18,100.0,0.0,False
+555705215,San Pedro,Reserva Forestal (RF),12561.22,0.0,207.57,726818.32,714257.1,765067.39,1.73,3221.1,131.48,-3089.62,765067.39,99.57,0.43,False
+10787,La Paragua,Reserva Forestal (RF),10885.46,0.9,26.72,663474.23,652588.77,824217.87,1.64,22702.14,1476.54,-21225.6,824217.87,97.31,2.69,False
+67615,Tirgua (General Manuel Manrique),Parque Nacional (PN),10659.57,0.1,0.0,81981.6,71322.03,90218.69,13.0,71.72,1.78,-69.94,90218.69,99.92,0.08,False
+10783,Caparo,Reserva Forestal (RF),10638.03,1035.77,207.49,53947.99,43309.96,175223.12,19.72,1.39,0.0,-1.39,175223.12,100.0,0.0,False
+20076,Cuenca Alta de los Ríos Matícora y Cocuiza,Zona Protectora (ZP),10425.53,0.0,0.0,160361.47,149935.94,259190.48,6.5,18.84,0.07,-18.77,259190.48,99.99,0.01,False
+313,Canaima,Parque Nacional (PN),10219.59,0.0,96.47,1910213.76,1899994.17,2762033.22,0.53,62839.51,10303.82,-52535.69,2762033.22,97.71,2.29,False
+61899,Cuenca Alta y Media del Río Orituco,Zona Protectora (ZP),9613.77,0.0,0.0,16441.75,6827.98,41061.25,58.47,18.33,0.02,-18.31,41061.25,99.96,0.04,False
+10774,"Suelos, Bosques y Aguas en la cuenca del río Guárico",Zona Protectora (ZP),9597.49,0.0,0.0,16582.36,6984.87,37602.24,57.88,0.38,0.0,-0.38,37602.24,100.0,0.0,False
+10780,Caura,Parque Nacional (PN),9325.19,0.0,2.96,6895019.72,6885694.53,7068601.78,0.14,474920.94,27586.44,-447334.5,7068601.78,93.62,6.38,True
+32731,Sierra de Aroa,Zona Protectora (ZP),9213.56,0.0,79.74,105693.11,96479.55,112613.28,8.72,1848.81,422.74,-1426.07,112613.28,98.11,1.89,False
+20074,Sierra de Bobare,Zona Protectora (ZP),8686.73,457.52,74.65,85059.42,76372.69,100841.2,10.21,3.12,2.22,-0.9,100841.2,99.99,0.01,False
+101116,Chivapure - Cuchivero,Área Boscosa Bajo Protección (ABBP),7896.93,0.0,0.0,543526.98,535630.05,610277.55,1.45,3124.18,222.61,-2901.57,610277.55,99.48,0.52,False
+10776,Del Área Metropolitana de Caracas,Zona Protectora (ZP),7426.9,0.0,755.37,54869.46,47442.56,64622.59,13.54,2327.94,219.15,-2108.79,64622.59,96.38,3.62,False
+101097,Achaguas,Área Boscosa Bajo Protección (ABBP),7101.86,1356.32,31.31,23604.07,16502.21,90543.98,30.09,0.06,0.0,-0.06,90543.98,100.0,0.0,False
+30023,Ciénagas de Juan Manuel,Parque Nacional (PN),6571.21,0.0,0.0,141024.31,134453.1,168824.63,4.66,92.9,0.93,-91.97,168824.63,99.94,0.06,False
+10786,Selva de Guarapiche,Reserva Forestal (RF),6329.0,0.01,0.0,287638.32,281309.32,357894.77,2.2,32.17,0.01,-32.16,357894.77,99.99,0.01,False
+101106,Caño Caballo,Área Boscosa Bajo Protección (ABBP),5924.27,110.91,0.56,16707.73,10783.46,54794.19,35.46,0.38,0.0,-0.38,54794.19,100.0,0.0,False
+555705212,Cuenca Alta del Río Tocuyo Sector Dos Cerrito,Zona Protectora (ZP),5715.93,0.0,336.85,52000.96,46285.03,72481.12,10.99,94.0,296.26,202.26,72481.12,99.48,0.52,False
+315,Aguaro - Guariquito,Parque Nacional (PN),5247.67,699.61,0.0,30910.34,25662.67,580070.53,16.98,3.58,0.0,-3.58,580070.53,100.0,0.0,False
+20068,Región Lago de Maracaibo (Sierra de Perijá) (Polígonos 1 y 2),Zona Protectora (ZP),5170.14,0.0,0.0,192634.41,187464.27,256577.67,2.68,164.25,0.0,-164.25,256577.67,99.94,0.06,False
+10775,"Cuenca de los Ríos Guasare, Socuy y Cachiri",Zona Protectora (ZP),5012.77,0.0,0.0,268192.95,263180.18,301207.11,1.87,2494.45,109.46,-2384.99,301207.11,99.16,0.84,False
+101099,Santo Domingo,Área Boscosa Bajo Protección (ABBP),4977.85,5143.83,33.2,36169.82,31191.97,148409.12,13.76,0.76,0.0,-0.76,148409.12,100.0,0.0,False
+323,Henri Pittier,Parque Nacional (PN),4946.71,0.0,52.08,92286.78,87340.07,105633.73,5.36,1470.42,126.3,-1344.12,105633.73,98.56,1.44,False
+32733,Cuenta Alta y Media Río Machango,Zona Protectora (ZP),4913.61,0.0,0.0,40802.91,35889.3,58326.79,12.04,1.76,0.25,-1.51,58326.79,100.0,0.0,False
+321,Sierra Nevada,Parque Nacional (PN),4871.78,0.0,0.0,146515.98,141644.2,235389.08,3.33,29034.22,27973.19,-1061.03,235389.08,85.13,14.87,False
+101124,Piedemonte Portuguesa,Área Boscosa Bajo Protección (ABBP),4727.03,0.0,0.0,27034.34,22307.31,53678.28,17.49,3.02,0.0,-3.02,53678.28,99.99,0.01,False
+555705211,Cuenca Alta del Río Tocuyo Sector Curarigua,Zona Protectora (ZP),4547.74,0.0,172.0,37912.29,33364.55,74741.06,12.0,61.21,187.11,125.9,74741.06,99.68,0.32,False
+101121,Pedernales,Área Boscosa Bajo Protección (ABBP),4431.72,0.0,0.0,234660.88,230229.16,253666.74,1.89,140.15,0.03,-140.12,253666.74,99.94,0.06,False
+10769,Burro Negro,Reserva Nacional Hidraúlica (RNH),4111.83,0.0,0.0,44922.59,40810.76,53760.41,9.15,0.0,0.0,0.0,53760.41,100.0,0.0,False
+101160,Burro Negro,Zona Protectora (ZP),4111.83,0.0,0.0,44922.59,40810.76,53760.41,9.15,0.0,0.0,0.0,53760.41,100.0,0.0,False
+101088,Tiznados,Área Boscosa Bajo Protección (ABBP),3981.26,425.62,0.02,9583.52,5602.26,20124.19,41.54,0.0,0.0,0.0,20124.19,100.0,0.0,False
+325,Guatopo,Parque Nacional (PN),3970.81,0.0,2.04,114277.56,110306.75,118169.92,3.47,3784.67,15.4,-3769.27,118169.92,96.89,3.11,False
+101103,San Francisco de la Paragua,Área Boscosa Bajo Protección (ABBP),3924.23,146.5,2.77,48605.89,44681.66,68307.06,8.07,388.04,0.65,-387.39,68307.06,99.43,0.57,False
+101136,Río Viejo - San Camilo,Parque Nacional (PN),3813.87,577.7,34.66,24814.1,21000.23,42518.01,15.37,0.53,0.0,-0.53,42518.01,100.0,0.0,False
+10782,San Camilo,Reserva Forestal (RF),3773.78,1591.34,135.08,28846.39,25072.61,66855.2,13.08,1.44,0.0,-1.44,66855.2,100.0,0.0,False
+318,Perijá,Parque Nacional (PN),3748.14,0.0,3.29,250370.07,246621.93,269757.99,1.5,15228.97,1215.75,-14013.22,269757.99,94.41,5.59,False
+101143,Macizo Cuao - Sipapo y Cerro Moriche,Monumento Natural (MN),3402.83,1.28,0.0,1140731.04,1137328.21,1226582.32,0.3,437.25,554.58,117.33,1226582.32,99.93,0.07,False
+30026,Paríma - Tapirapeco,Parque Nacional (PN),3150.17,20.75,0.0,3841694.72,3838544.55,3892237.47,0.08,13179.0,593.51,-12585.49,3892237.47,99.66,0.34,False
+101167,Cuenca del Río Castán,Zona Protectora (ZP),3046.94,0.0,117.79,22481.32,19434.38,31292.81,13.55,74.42,88.74,14.32,31292.81,99.52,0.48,False
+101114,San Fernando,Área Boscosa Bajo Protección (ABBP),2961.42,1520.79,0.0,7857.87,4896.45,37289.38,37.69,5.08,0.0,-5.08,37289.38,99.99,0.01,False
+101091,El Yagual,Área Boscosa Bajo Protección (ABBP),2825.83,34.39,15.64,12858.42,10032.59,41439.03,21.98,0.01,0.0,-0.01,41439.03,100.0,0.0,False
+327,Waraira Repano,Parque Nacional (PN),2781.85,0.0,303.92,77722.51,74940.66,80035.85,3.58,1064.45,19.24,-1045.21,80035.85,98.68,1.32,False
+20083,Del Área Metropolitana de la Ciudad de San Cristobal,Zona Protectora (ZP),2725.29,0.0,188.26,20414.2,17688.91,27757.0,13.35,59.31,87.98,28.67,27757.0,99.5,0.5,False
+30635,De la Sierra de San Luis,Zona Protectora (ZP),2549.13,0.0,142.99,79820.98,77271.85,102862.94,3.19,363.34,3.02,-360.32,102862.94,99.65,0.35,False
+10788,Río Tocuyo,Reserva Forestal (RF),2478.0,0.0,38.22,37544.24,35066.24,51253.48,6.6,3.48,0.01,-3.47,51253.48,99.99,0.01,False
+101090,Río Orichuna,Área Boscosa Bajo Protección (ABBP),2379.41,54.28,0.0,19297.76,16918.35,43676.2,12.33,0.0,0.0,0.0,43676.2,100.0,0.0,False
+19285,General Juan Pablo Peñaloza en los Páramos del Batallón y La Negra,Parque Nacional (PN),2340.02,0.0,0.0,51374.7,49034.68,72419.6,4.55,21284.23,7851.91,-13432.32,72419.6,75.57,24.43,True
+20072,Cuenca Hidrográfica del Río Yacambu,Zona Protectora (ZP),2273.84,0.0,56.32,24180.29,21906.45,25288.65,9.4,105.56,519.27,413.71,25288.65,97.63,2.37,False
+30636,Del Área Metropolitana de la Ciudad de Barquisimeto,Zona Protectora (ZP),2124.98,0.0,194.08,9673.57,7548.59,41754.64,21.97,4.83,1.23,-3.6,41754.64,99.99,0.01,False
+555705216,Caño Blanco,Área Boscosa Bajo Protección (ABBP),2028.38,1560.74,0.0,38865.5,36837.12,68041.58,5.22,49.27,0.79,-48.48,68041.58,99.93,0.07,False
+101127,Río Tucurere,Área Boscosa Bajo Protección (ABBP),1903.98,420.05,93.12,47169.84,45265.86,72670.91,4.04,46.0,1.55,-44.45,72670.91,99.93,0.07,False
+20082,Río Torbes y alrededores,Zona Protectora (ZP),1687.46,0.0,131.43,7861.27,6173.81,11610.1,21.47,539.48,875.04,335.56,11610.1,92.44,7.56,False
+338,Cerro El Copey - Jóvito Villalba,Parque Nacional (PN),1635.08,0.0,9.34,5677.85,4042.77,7276.47,28.8,135.74,1.68,-134.06,7276.47,98.15,1.85,False
+101140,Sierra Marutani,Monumento Natural (MN),1612.89,0.0,0.0,212153.5,210540.61,213379.93,0.76,557.14,17.79,-539.35,213379.93,99.73,0.27,False
+332,Terepaima,Parque Nacional (PN),1559.76,0.0,8.82,17197.71,15637.95,18498.12,9.07,1.18,0.63,-0.55,18498.12,99.99,0.01,False
+101102,Río Guanipa,Área Boscosa Bajo Protección (ABBP),1501.19,0.0,1.43,113495.48,111994.29,116955.83,1.32,8.2,0.08,-8.12,116955.83,99.99,0.01,False
+555705219,Cerro Machado - El Silencio,Reserva Nacional Hidraúlica (RNH),1485.14,0.0,39.6,5710.73,4225.59,8361.86,26.01,276.7,54.69,-222.01,8361.86,96.35,3.65,False
+334,Macarao,Parque Nacional (PN),1400.27,0.0,16.17,13443.52,12043.25,14623.16,10.42,66.84,5.42,-61.42,14623.16,99.52,0.48,False
+101139,Cerro Camani y Cerro Morrocoy,Monumento Natural (MN),1375.4,1.92,0.0,86443.56,85068.16,115924.32,1.59,9.53,8.36,-1.17,115924.32,99.99,0.01,False
+101141,Serranía Yutajé / Coro - coro,Monumento Natural (MN),1374.84,20.36,0.0,90169.15,88794.31,107823.5,1.52,2346.92,271.88,-2075.04,107823.5,97.81,2.19,False
+101120,Matícora y Cocuiza,Área Boscosa Bajo Protección (ABBP),1330.05,0.0,0.33,28501.47,27171.42,42852.86,4.67,18.41,0.07,-18.34,42852.86,99.96,0.04,False
+101137,Cerro Guaiquinima,Monumento Natural (MN),1275.47,0.0,1.71,635013.88,633738.41,649629.82,0.2,30937.19,1509.22,-29427.97,649629.82,95.44,4.56,False
+555705213,El Frío,Reserva Forestal (RF),1218.75,0.0,4.16,76072.78,74854.03,90813.48,1.6,152.87,0.19,-152.68,90813.48,99.83,0.17,False
+101108,Botucal,Área Boscosa Bajo Protección (ABBP),1102.67,1406.34,13.06,4488.74,3386.07,13738.75,24.57,0.33,0.0,-0.33,13738.75,100.0,0.0,False
+30647,Cuenca Hidrográfica del Río Capaz (Capazón),Zona Protectora (ZP),1098.93,0.0,0.0,26205.24,25106.31,39925.22,4.19,5647.87,574.58,-5073.29,39925.22,87.5,12.5,True
+307,Cerro de María Lionza,Monumento Natural (MN),1013.94,0.0,0.91,11576.67,10562.73,11825.5,8.76,38.85,1.22,-37.63,11825.5,99.66,0.34,False
+32732,Cuenca Hidrográfica del Embalse El Cigarrón,Zona Protectora (ZP),997.23,192.76,0.0,12254.75,11257.52,46016.98,8.14,9.81,0.0,-9.81,46016.98,99.98,0.02,False
+555705214,El Dorado - Tumeremo,Reserva Forestal (RF),953.43,0.27,305.2,63735.32,62781.89,66079.72,1.5,57.64,14.11,-43.53,66079.72,99.89,0.11,False
+20084,De la Ciudad de Rubio,Zona Protectora (ZP),912.66,0.0,146.45,21788.51,20875.85,28049.88,4.19,51.61,5.25,-46.36,28049.88,99.8,0.2,False
+333,El Guácharo,Parque Nacional (PN),898.3,0.0,28.5,56591.3,55693.0,60092.47,1.59,1531.17,119.55,-1411.62,60092.47,97.35,2.65,False
+324,Mochima,Parque Nacional (PN),842.35,0.0,0.0,28804.81,27962.46,44777.46,2.92,3.61,1.25,-2.36,44777.46,99.99,0.01,False
+555705217,Santa Marta,Área Boscosa Bajo Protección (ABBP),835.41,374.32,14.66,10573.94,9738.53,37979.15,7.9,1.61,0.0,-1.61,37979.15,100.0,0.0,False
+101161,Cuenca Hidrográfica del Río Pedregal,Zona Protectora (ZP),759.75,18.37,9.41,70664.79,69905.04,196113.72,1.08,0.01,0.0,-0.01,196113.72,100.0,0.0,False
+20092,Cuenca Hidrográfica del Río Pedregal,Reserva Nacional Hidraúlica (RNH),750.97,18.4,9.41,70553.14,69802.17,195877.53,1.06,0.01,0.0,-0.01,195877.53,100.0,0.0,False
+101166,Cuenca Hidrográfica del Río Cataniapo,Zona Protectora (ZP),744.05,21.5,0.0,146202.55,145458.5,152977.7,0.51,0.11,0.0,-0.11,152977.7,100.0,0.0,False
+30032,Cerro Saroche,Parque Nacional (PN),733.55,3.37,0.0,1882.35,1148.8,36176.03,38.97,2.48,0.0,-2.48,36176.03,99.99,0.01,False
+555705269,"Cuenca del Río Mucujepe (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 3)",Zona Protectora (ZP),709.95,0.0,480.3,13920.4,13210.45,23817.12,5.1,6583.7,1987.77,-4595.93,23817.12,77.96,22.04,True
+20096,Cuenca del Río Chuspita,Zona Protectora (ZP),672.17,0.0,33.11,5578.03,4905.86,5782.38,12.05,96.73,0.19,-96.54,5782.38,98.35,1.65,False
+101104,Nirgua - Aroa,Área Boscosa Bajo Protección (ABBP),645.0,0.0,0.0,51624.95,50979.95,68281.93,1.25,32.74,2.05,-30.69,68281.93,99.95,0.05,False
+101128,Río Guanare Viejo,Área Boscosa Bajo Protección (ABBP),621.65,347.77,46.91,3490.56,2868.91,18647.95,17.81,0.11,0.0,-0.11,18647.95,100.0,0.0,False
+30643,Área situada en el Dtto Rojas del Estado Barinas en el margen izquierdo del río Masparro,Zona Protectora (ZP),605.5,162.77,0.48,2201.79,1596.29,6322.29,27.5,0.0,0.0,0.0,6322.29,100.0,0.0,False
+10767,San Esteban,Parque Nacional (PN),594.85,0.0,0.0,33248.24,32653.39,39796.15,1.79,1291.93,307.88,-984.05,39796.15,96.37,3.63,False
+10781,Sipapo,Reserva Forestal (RF),594.38,424.84,0.0,1787496.23,1786901.85,1976466.01,0.03,797.81,893.58,95.77,1976466.01,99.93,0.07,False
+101126,La Danta,Área Boscosa Bajo Protección (ABBP),584.22,201.16,80.54,2811.35,2227.13,13018.07,20.78,0.0,0.0,0.0,13018.07,100.0,0.0,False
+10778,Litoral Central,Zona Protectora (ZP),582.71,15.34,181.22,37271.69,36688.98,38875.71,1.56,2.08,0.0,-2.08,38875.71,99.99,0.01,False
+555705210,Rio Parguaza,Reserva Forestal (RF),562.75,0.02,0.0,60117.57,59554.82,66003.31,0.94,3.84,0.0,-3.84,66003.31,99.99,0.01,False
+335,Yacambú,Parque Nacional (PN),503.88,0.0,0.0,23980.78,23476.9,24462.56,2.1,59.9,410.43,350.53,24462.56,98.12,1.88,False
+555705267,Subcuenca del Río Momboy,Zona Protectora (ZP),471.24,166.43,78.37,5119.11,4647.87,12481.65,9.21,1.73,32.95,31.22,12481.65,99.73,0.27,False
+20054,Dinira,Parque Nacional (PN),449.27,0.0,2.83,39783.08,39333.81,45389.68,1.13,163.43,31.79,-131.64,45389.68,99.58,0.42,False
+101144,Cerro Guanay,Monumento Natural (MN),435.02,0.0,0.0,20027.2,19592.18,34596.34,2.17,815.54,29.81,-785.73,34596.34,97.69,2.31,False
+555705283,Macizo Parú - Euaja,Monumento Natural (MN),416.26,0.0,0.0,287375.83,286959.57,308264.62,0.14,6227.34,1460.94,-4766.4,308264.62,97.87,2.13,False
+555705218,Fundo Flamerich,Área Boscosa Bajo Protección (ABBP),386.92,0.0,0.0,12164.78,11777.86,13058.4,3.18,1.32,0.0,-1.32,13058.4,99.99,0.01,False
+555705222,Fundo Paisolandia,Área Boscosa Bajo Protección (ABBP),381.82,9.19,16.74,5710.77,5328.95,6892.16,6.69,13.88,2.43,-11.45,6892.16,99.77,0.23,False
+555705281,"Franja de 100 metros de ancho a ambos márgenes de los ríos Guanare, Tucupido, Boconó, La Yuca y Masparro",Zona Protectora (ZP),358.97,479.75,30.39,6345.94,5986.97,20373.33,5.66,88.92,78.62,-10.3,20373.33,99.37,0.63,False
+2246,Medanos de Coro,Parque Nacional (PN),351.33,0.0,0.0,1836.81,1485.48,16659.29,19.13,0.0,0.0,0.0,16659.29,100.0,0.0,False
+30031,Dr. Amenodoro Rangel Lamus (Chorro El Indio),Parque Nacional (PN),343.9,0.0,25.05,12413.57,12069.67,14246.85,2.77,889.14,1923.11,1033.97,14246.85,85.64,14.36,True
+30033,Dr. Antonio José Uzcátegui Burguera (Sierra de la Culata),Parque Nacional (PN),316.04,0.0,0.0,89552.96,89236.92,187874.71,0.35,12502.53,4193.65,-8308.88,187874.71,93.33,6.67,False
+101130,Río Icabaru,Reserva Nacional Hidraúlica (RNH),302.81,0.0,0.0,38967.39,38664.58,39245.72,0.78,7.39,0.0,-7.39,39245.72,99.98,0.02,False
+4367,Serranía La Neblina,Parque Nacional (PN),285.73,0.0,0.0,1151740.83,1151455.1,1162967.23,0.02,25823.3,15238.15,-10585.15,1162967.23,97.47,2.53,False
+101129,Cerro Machado - El Silencio,Área Boscosa Bajo Protección (ABBP),268.61,0.0,4.63,5177.05,4908.44,5619.8,5.19,2658.48,204.91,-2453.57,5619.8,67.69,32.31,True
+555705284,Cuenca del Río Sanchón,Zona Protectora (ZP),259.8,0.0,6.79,6931.55,6671.75,8501.61,3.75,99.95,0.05,-99.9,8501.61,98.84,1.16,False
+311,Cerros Matasiete y Guayamurí,Monumento Natural (MN),252.35,0.37,1.66,812.84,560.49,1628.74,31.05,17.7,0.04,-17.66,1628.74,98.92,1.08,False
+101122,El Choco,Área Boscosa Bajo Protección (ABBP),221.42,0.88,46.82,15662.26,15440.84,16007.83,1.41,8.4,0.23,-8.17,16007.83,99.95,0.05,False
+19290,Arístides Rojas (Morros de San Juan),Monumento Natural (MN),211.84,0.0,0.0,928.41,716.57,2734.52,22.82,0.0,0.0,0.0,2734.52,100.0,0.0,False
+67614,El Guache,Parque Nacional (PN),203.65,0.0,0.0,14236.4,14032.75,14896.94,1.43,487.95,424.89,-63.06,14896.94,94.36,5.64,False
+101112,El Clavo,Área Boscosa Bajo Protección (ABBP),196.06,538.63,41.21,972.56,776.5,9398.7,20.16,0.18,0.0,-0.18,9398.7,100.0,0.0,False
+19287,Juan German Rocío (Cerro Platillón),Monumento Natural (MN),176.91,0.0,0.64,6533.67,6356.76,7937.11,2.71,21.0,0.0,-21.0,7937.11,99.74,0.26,False
+20086,Subcuenca de la Quebrada Las González,Zona Protectora (ZP),163.95,45.71,50.42,3536.71,3372.76,10997.65,4.64,3.49,0.01,-3.48,10997.65,99.97,0.03,False
+555705238,Páramo La Laja,Reserva Nacional Hidraúlica (RNH),145.06,0.0,18.06,1698.99,1553.93,2217.65,8.54,0.0,0.0,0.0,2217.65,100.0,0.0,False
+555705241,Teta de Niquitao - Guirigay,Monumento Natural (MN),125.22,0.0,0.0,15238.36,15113.14,23725.4,0.82,1364.93,4907.32,3542.39,23725.4,81.83,18.17,True
+30645,Cuenca Hidrográfica del Embalse La Mariposa,Zona Protectora (ZP),113.79,0.64,26.64,2206.99,2093.2,2796.92,5.16,28.78,2.51,-26.27,2796.92,98.94,1.06,False
+101119,Santa Rosa,Área Boscosa Bajo Protección (ABBP),113.27,0.0,0.0,44588.5,44475.23,98829.46,0.25,10.03,0.0,-10.03,98829.46,99.99,0.01,False
+30639,Subcuenca Río Mucujún,Zona Protectora (ZP),112.87,0.0,35.46,6900.45,6787.58,19161.31,1.64,1.01,0.69,-0.32,19161.31,99.99,0.01,False
+101110,Delgadito,Área Boscosa Bajo Protección (ABBP),109.53,153.96,20.91,905.05,795.52,3336.51,12.1,0.0,0.0,0.0,3336.51,100.0,0.0,False
+330,Yurubí,Parque Nacional (PN),109.46,0.0,6.54,23220.11,23110.65,23569.84,0.47,625.65,59.54,-566.11,23569.84,97.21,2.79,False
+101086,Páramo La Laja,Área Boscosa Bajo Protección (ABBP),106.47,0.0,6.11,2130.81,2024.34,2209.67,5.0,7.56,0.0,-7.56,2209.67,99.66,0.34,False
+20095,Valle del Algodonal,Zona Protectora (ZP),101.36,0.0,4.18,119.15,17.79,207.96,85.07,2.78,0.0,-2.78,207.96,98.68,1.32,False
+30634,Cuenca del Río Albarregas,Zona Protectora (ZP),86.09,3.94,64.54,7250.39,7164.3,10517.91,1.19,15.48,0.25,-15.23,10517.91,99.85,0.15,False
+30027,Pico Codazzi,Monumento Natural (MN),85.12,0.0,42.82,11376.02,11290.9,11617.86,0.75,158.21,11.94,-146.27,11617.86,98.61,1.39,False
+30644,Área que bordea la Laguna La Danta,Zona Protectora (ZP),80.76,114.41,9.09,293.61,212.85,2206.73,27.51,0.0,0.0,0.0,2206.73,100.0,0.0,False
+337,Cueva de la Quebrada El Toro,Parque Nacional (PN),79.48,0.0,0.69,3533.51,3454.03,3838.7,2.25,3.5,0.78,-2.72,3838.7,99.89,0.11,False
+336,Laguna de La Restinga,Parque Nacional (PN),59.37,0.0,0.62,75.65,16.28,11021.36,78.48,0.0,0.0,0.0,11021.36,100.0,0.0,False
+20071,Mitar Nakichenovich,Zona Protectora (ZP),51.69,1.18,11.53,438.24,386.55,613.05,11.79,0.0,0.0,0.0,613.05,100.0,0.0,False
+101145,Cerro Vinilla y Cerro Aratitiyope,Monumento Natural (MN),43.24,0.0,0.0,201160.17,201116.93,205192.65,0.02,202.24,38.58,-163.66,205192.65,99.9,0.1,False
+555705236,San Pedro del Río,Reserva Nacional Hidraúlica (RNH),41.89,0.0,0.0,239.0,197.11,347.4,17.53,0.0,0.0,0.0,347.4,100.0,0.0,False
+30648,De La Tortuga Arrau,Zona Protectora (ZP),35.98,10.34,0.0,6624.54,6588.56,17543.65,0.54,0.05,0.0,-0.05,17543.65,100.0,0.0,False
+20079,Cuenca de la Quebrada La Machiri,Zona Protectora (ZP),32.75,0.0,9.76,1325.36,1292.61,1627.86,2.47,82.41,137.63,55.22,1627.86,89.89,10.11,False
+67612,Piedra Pintada,Monumento Natural (MN),30.21,0.0,0.0,609.14,578.93,1502.29,4.96,0.01,0.0,-0.01,1502.29,100.0,0.0,False
+30646,"Islas e Islotes, Laguna, Cabos y Puntas",Zona Protectora (ZP),26.63,0.0,19.19,54.35,27.72,1462.49,49.0,0.02,0.0,-0.02,1462.49,100.0,0.0,False
+4371,Cueva del Guácharo Alejandro de Humboldt,Monumento Natural (MN),25.12,0.0,0.39,657.2,632.08,866.92,3.82,3.39,0.03,-3.36,866.92,99.61,0.39,False
+555705280,Area que bordea el estero situado en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),17.54,123.19,3.08,222.72,205.18,848.56,7.88,0.0,0.04,0.04,848.56,100.0,0.0,False
+30640,De las Ciudades de San Antonio- Ureña y Aguas Calientes,Zona Protectora (ZP),17.42,1.79,1.41,4847.51,4830.09,6315.2,0.36,0.02,0.0,-0.02,6315.2,100.0,0.0,False
+310,Laguna de Las Marites,Monumento Natural (MN),16.3,0.0,8.44,60.23,43.93,2622.88,27.06,0.0,0.0,0.0,2622.88,100.0,0.0,False
+20065,Cerro Volcán,Zona Protectora (ZP),14.11,0.0,20.41,352.22,338.11,542.18,4.01,7.64,2.5,-5.14,542.18,98.43,1.57,False
+67610,Meseta La Galera,Monumento Natural (MN),11.61,0.0,0.0,27.49,15.88,61.16,42.23,0.04,0.0,-0.04,61.16,99.93,0.07,False
+30641,La Pereza,Zona Protectora (ZP),7.92,0.0,6.43,150.68,142.76,291.59,5.26,37.7,0.47,-37.23,291.59,88.53,11.47,True
+4363,Laguna de Urao,Monumento Natural (MN),5.63,0.0,0.0,13.78,8.15,44.51,40.86,0.0,0.0,0.0,44.51,100.0,0.0,False
+555705271,Playa Norte,Zona Protectora (ZP),5.3,0.0,3.74,211.62,206.32,288.35,2.5,0.1,0.0,-0.1,288.35,99.97,0.03,False
+67611,Piedra La Tortuga,Monumento Natural (MN),5.07,17.56,0.0,86.21,81.14,468.86,5.88,0.0,0.0,0.0,468.86,100.0,0.0,False
+20066,Distrito Guaicaipuro  (Los Teques),Zona Protectora (ZP),4.87,10.19,5.92,704.85,699.98,1376.76,0.69,36.12,0.71,-35.41,1376.76,97.41,2.59,False
+4369,Morros de Macaira,Monumento Natural (MN),3.99,0.0,0.0,81.15,77.16,82.75,4.92,0.44,0.0,-0.44,82.75,99.47,0.53,False
+4373,Piedra de Cocuy,Monumento Natural (MN),0.12,0.0,0.0,1097.32,1097.2,1101.35,0.01,0.0,0.0,0.0,1101.35,100.0,0.0,False
+4370,"Cueva ""Alfredo Jahn""",Monumento Natural (MN),0.01,0.0,0.0,53.12,53.11,53.12,0.02,0.0,0.0,0.0,53.12,100.0,0.0,False
+555705242,Montecano,Monumento Natural (MN),0.0,140.5,0.0,691.64,1026.89,2575.1,0.0,0.0,0.0,0.0,2575.1,100.0,0.0,False
+101149,Cerro Tamacuari y Serranía Tapirapecó,Monumento Natural (MN),0.0,0.0,0.0,128458.09,128476.88,128608.42,0.0,3181.72,825.06,-2356.66,128608.42,97.39,2.61,False
+101142,Sierra Unturán,Monumento Natural (MN),0.0,0.0,0.0,355937.9,356017.03,358372.14,0.0,1731.67,157.91,-1573.76,358372.14,99.49,0.51,False
+101146,Sierra Maigualida,Monumento Natural (MN),0.0,0.0,2.78,1775479.26,1778953.33,1808689.13,0.0,235060.93,4654.63,-230406.3,1808689.13,88.47,11.53,True
+101147,Cerro Venamo,Monumento Natural (MN),0.0,0.0,0.0,3421.71,3467.97,5611.63,0.0,0.05,1.16,1.11,5611.63,99.98,0.02,False
+101148,Cerro Yaví,Monumento Natural (MN),0.0,0.01,0.0,17288.3,17358.95,26950.68,0.0,241.35,87.19,-154.16,26950.68,98.99,1.01,False
+4374,Chorreras Las González,Monumento Natural (MN),0.0,0.0,0.0,120.18,122.53,130.45,0.0,0.0,0.0,0.0,130.45,100.0,0.0,False
+19280,Loma de León,Monumento Natural (MN),0.0,0.64,55.19,675.55,936.83,7660.71,0.0,0.61,0.0,-0.61,7660.71,99.99,0.01,False
+4372,Cerro Autana,Monumento Natural (MN),0.0,0.0,0.0,9075.76,9076.7,9080.82,0.0,0.96,8.08,7.12,9080.82,99.9,0.1,False
+101138,Cerro Ichum y Cerro Guanacoco,Monumento Natural (MN),0.0,0.0,0.05,957027.7,957858.37,961596.68,0.0,19615.71,3020.33,-16595.38,961596.68,97.92,2.08,False
+308,Las Tetas de María Guevara,Monumento Natural (MN),0.0,0.0,0.0,2.99,4.47,1494.49,0.0,0.0,0.0,0.0,1494.49,100.0,0.0,False
+309,Cerro Santa Ana,Monumento Natural (MN),0.0,0.0,0.0,326.62,343.49,1975.09,0.0,1.21,0.0,-1.21,1975.09,99.94,0.06,False
+101150,Abra Río Frío,Monumento Natural (MN),0.0,0.18,0.0,1136.14,1202.58,1326.98,0.0,0.0,0.0,0.0,1326.98,100.0,0.0,False
+555705240,Cadena de Tepuyes Orientales: Llu (Tramen) Tepuy. Karaurín Tepuy. Uei Tepuy. Yuruaní Tepuy. Kukenán (Mataui) Tepuy. Wadakapiapué Tepuy.,Monumento Natural (MN),0.0,13.12,0.04,56094.36,56099.88,140453.71,0.0,3500.15,550.87,-2949.28,140453.71,97.56,2.44,False
+317,Yapacana,Parque Nacional (PN),0.0,0.0,218.54,222109.68,223399.25,268540.16,0.0,37.04,102.93,65.89,268540.16,99.95,0.05,False
+322,"Páramos de Tamá, Cobre y Judio",Parque Nacional (PN),0.0,62.88,0.0,103202.23,104272.78,118472.83,0.0,6665.36,14820.02,8154.66,118472.83,87.26,12.74,True
+331,Laguna de Tacarigua,Parque Nacional (PN),0.0,12.91,2.86,7995.92,8170.38,18924.09,0.0,0.0,0.0,0.0,18924.09,100.0,0.0,False
+328,Península de Paria,Parque Nacional (PN),0.0,0.0,0.03,31787.23,32776.12,33144.74,0.0,1695.67,32.15,-1663.52,33144.74,95.1,4.9,False
+10785,Turén,Reserva Forestal (RF),0.0,440.53,114.27,7726.49,8929.83,96932.19,0.0,0.0,0.0,0.0,96932.19,100.0,0.0,False
+2247,Morrocoy,Parque Nacional (PN),0.0,0.0,38.24,4481.9,4488.57,8577.84,0.0,1.07,0.42,-0.65,8577.84,99.98,0.02,False
+2245,Archipiélago Los Roques,Parque Nacional (PN),0.0,0.0,3.79,109.47,161.46,5624.08,0.0,0.01,0.0,-0.01,5624.08,100.0,0.0,False
+4366,Duida - Marahuaca,Parque Nacional (PN),0.0,0.0,0.0,375332.61,376130.8,384085.84,0.0,20961.42,14855.84,-6105.58,384085.84,94.08,5.92,False
+19284,Juan Crisóstomo Falcón en la Sierra de San Luis,Parque Nacional (PN),0.0,0.0,1.01,18991.0,19050.16,19157.03,0.0,69.68,1.06,-68.62,19157.03,99.63,0.37,False
+15135,General Cruz Carrillo en Guaramacal,Parque Nacional (PN),0.0,0.0,0.0,17434.01,17473.83,17704.93,0.0,3385.48,3553.41,167.93,17704.93,75.18,24.82,False
+19286,Santos Luzardo,Parque Nacional (PN),0.0,13470.38,0.0,66433.06,71381.21,561807.18,0.0,2.11,0.0,-2.11,561807.18,100.0,0.0,False
+30024,Turuépano,Parque Nacional (PN),0.0,0.43,0.0,47290.44,49246.24,72071.95,0.0,0.48,0.0,-0.48,72071.95,100.0,0.0,False
+30638,Del Área Metropolitana de Maracaibo,Zona Protectora (ZP),0.0,0.0,0.0,2310.09,2810.42,20912.24,0.0,0.13,0.02,-0.11,20912.24,100.0,0.0,False
+30637,De la Ciudad de Coro,Zona Protectora (ZP),0.0,0.0,0.0,4038.62,5093.23,19620.47,0.0,0.0,0.0,0.0,19620.47,100.0,0.0,False
+20093,Valle del Quíbor,Reserva Nacional Hidraúlica (RNH),0.0,475.08,679.48,829.4,1864.98,62558.34,0.0,0.0,0.0,0.0,62558.34,100.0,0.0,False
+20090,Cuenca Hidrográfica del Río Capravera,Reserva Nacional Hidraúlica (RNH),0.0,0.0,0.0,741.24,821.46,3206.91,0.0,0.0,0.0,0.0,3206.91,100.0,0.0,False
+555705277,Isla Cubagua,Reserva Forestal (RF),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,False
+20087,Distrito Páez del Estado Apure,Reserva Nacional Hidraúlica (RNH),0.0,34.79,0.69,41425.67,42088.46,47177.53,0.0,1384.03,2405.41,1021.38,47177.53,93.82,6.18,False
+20089,Cuenca del Río Sanchón,Reserva Nacional Hidraúlica (RNH),0.0,0.0,0.0,8525.82,8541.72,8543.19,0.0,56.29,0.05,-56.24,8543.19,99.34,0.66,False
+555705235,Aguas Calientes,Reserva Nacional Hidraúlica (RNH),0.0,0.0,23.39,1266.09,1367.32,2836.21,0.0,0.0,0.0,0.0,2836.21,100.0,0.0,False
+555705278,Área situada en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),0.0,293.28,0.5,288.46,342.49,1218.75,0.0,0.0,0.0,0.0,1218.75,100.0,0.0,False
+555705279,Área que bordea la Laguna situada en el Dtto Guanare del Estado Portuguesa,Zona Protectora (ZP),0.0,218.29,4.87,177.68,209.79,1181.67,0.0,0.0,0.0,0.0,1181.67,100.0,0.0,False
+101087,Merejina,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,267706.62,268412.01,302245.27,0.0,38.32,0.53,-37.79,302245.27,99.99,0.01,False
+101162,Cuenca Hidrográfica del Río Capravera,Zona Protectora (ZP),0.0,0.0,0.0,741.21,821.46,3206.8,0.0,0.0,0.0,0.0,3206.8,100.0,0.0,False
+555705268,Embalse Mapara,Zona Protectora (ZP),0.0,0.0,0.0,2321.56,3078.62,12538.94,0.0,0.0,0.0,0.0,12538.94,100.0,0.0,False
+555705266,Área Metropolitana Barcelona - Pto. La Cruz - Guanta,Zona Protectora (ZP),0.0,0.0,0.0,11417.55,11864.76,16639.91,0.0,0.0,0.0,0.0,16639.91,100.0,0.0,False
+555705270,"Cuenca de los Ríos Escalante y Orope (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 2)",Zona Protectora (ZP),0.0,0.0,601.33,131053.68,131159.9,247618.51,0.0,34255.33,18237.17,-16018.16,247618.51,86.98,13.02,True
+555705272,"Río Umuquena (Zona Sur del Lago de Maracaibo, Artìculo 3, Numeral 1)",Zona Protectora (ZP),0.0,0.0,23.74,7849.79,8771.26,25739.91,0.0,4.64,0.0,-4.64,25739.91,99.98,0.02,False
+101165,Laguna Blanca o del Morro,Zona Protectora (ZP),0.0,0.0,1.45,7.69,10.07,130.01,0.0,0.0,0.0,0.0,130.01,100.0,0.0,False
+101117,Río Tarra,Área Boscosa Bajo Protección (ABBP),0.0,46.86,32.69,36286.96,37253.49,61811.24,0.0,17.7,1.72,-15.98,61811.24,99.97,0.03,False
+101115,Río Aricuaisá,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,6913.61,8429.3,15604.52,0.0,0.38,0.0,-0.38,15604.52,100.0,0.0,False
+101105,Libertad,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,9390.63,10398.94,39533.76,0.0,0.0,0.0,0.0,39533.76,100.0,0.0,False
+101118,El Amparo,Área Boscosa Bajo Protección (ABBP),0.0,256.64,0.0,15547.2,17069.13,39196.2,0.0,0.0,0.0,0.0,39196.2,100.0,0.0,False
+101123,Río Arauca - Güere,Área Boscosa Bajo Protección (ABBP),0.0,3.13,0.0,18155.09,19080.18,25724.01,0.0,0.0,0.0,0.0,25724.01,100.0,0.0,False
+101125,Río Tucuco,Área Boscosa Bajo Protección (ABBP),0.0,0.0,0.0,17119.36,19545.56,32306.33,0.0,3.33,0.0,-3.33,32306.33,99.99,0.01,False
+555705221,Río Apure - Caparo,Área Boscosa Bajo Protección (ABBP),0.0,0.17,0.62,3512.54,3661.81,19096.72,0.0,0.0,0.0,0.0,19096.72,100.0,0.0,False

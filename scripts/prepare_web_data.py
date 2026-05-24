@@ -30,7 +30,7 @@ INPUT_GPKG_LAYER = "change_indicators"
 
 INPUT_VENEZUELA = PROJECT_ROOT / "data" / "raw" / "venezuela.geojson"
 
-OUTPUT_DATA_DIR = PROJECT_ROOT / "src" / "data"
+OUTPUT_DATA_DIR = PROJECT_ROOT / "docs" / "data"
 
 OUTPUT_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -65,6 +65,13 @@ VECTOR_COLUMNS = [
     "forest_2024_ha",
     "total_area_ha",
     "forest_loss_pct",
+    "cloud_2017_ha",
+    "cloud_2024_ha",
+    "cloud_diff_ha",
+    "valid_common_ha",
+    "valid_common_pct",
+    "excluded_pct",
+    "cloud_contamination_flag",
     "geometry",
 ]
 
@@ -76,6 +83,12 @@ METRIC_COLUMNS = [
     "forest_2024_ha",
     "total_area_ha",
     "forest_loss_pct",
+    "cloud_2017_ha",
+    "cloud_2024_ha",
+    "cloud_diff_ha",
+    "valid_common_ha",
+    "valid_common_pct",
+    "excluded_pct",
 ]
 
 CHANGE_METRIC_COLUMNS = [
@@ -205,7 +218,6 @@ def build_tables(
         OUTPUT_DATA_DIR / "summaries_by_abrae.csv",
         index=False,
     )
-
     summary_by_type = (
         tabular
         .groupby("DESIG", as_index=False)
@@ -214,9 +226,17 @@ def build_tables(
             "forest_loss_ha": "sum",
             "agriculture_gain_ha": "sum",
             "urban_gain_ha": "sum",
+            "total_area_ha": "sum",
+            "valid_common_ha": "sum",
+            "valid_common_pct": "median",
+            "excluded_pct": "median",
+            "cloud_contamination_flag": "sum",
         })
         .rename(columns={
-            "SITE_ID": "n_abrae"
+            "SITE_ID": "n_abrae",
+            "valid_common_pct": "median_valid_common_pct",
+            "excluded_pct": "median_excluded_pct",
+            "cloud_contamination_flag": "n_cloud_flagged",
         })
     )
 

@@ -2,7 +2,7 @@
 
 const METRICS = {
   forest_loss_ha: {
-    label: "Pérdida de bosque (ha)",
+    label: "Pérdida de bosque comparable (ha)",
     shortLabel: "Pérdida de bosque",
     unit: "ha",
     colorScale: ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"],
@@ -10,7 +10,7 @@ const METRICS = {
     cssClass: "loss",
   },
   forest_loss_pct: {
-    label: "Pérdida de bosque (%)",
+    label: "Pérdida de bosque comparable (%)",
     shortLabel: "Pérdida de bosque %",
     unit: "%",
     colorScale: ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"],
@@ -18,7 +18,7 @@ const METRICS = {
     cssClass: "loss",
   },
   agriculture_gain_ha: {
-    label: "Ganancia agrícola (ha)",
+    label: "Ganancia agrícola comparable (ha)",
     shortLabel: "Ganancia agrícola",
     unit: "ha",
     colorScale: ["#ffffd4", "#fed98e", "#fe9929", "#d95f0e", "#993404"],
@@ -26,7 +26,7 @@ const METRICS = {
     cssClass: "gain",
   },
   urban_gain_ha: {
-    label: "Expansión urbana (ha)",
+    label: "Expansión urbana comparable (ha)",
     shortLabel: "Expansión urbana",
     unit: "ha",
     colorScale: ["#f2f0f7", "#cbc9e2", "#9e9ac8", "#756bb1", "#54278f"],
@@ -35,13 +35,11 @@ const METRICS = {
   },
 };
 
-// Basemap tile URLs (single source, swap with setTiles)
 const BASEMAP_TILES = {
   dark: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
   satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
 };
 
-// State
 let geojsonData = null;
 let boundaryData = null;
 let summaryByType = null;
@@ -52,15 +50,11 @@ let popup = null;
 let currentMetric = "forest_loss_ha";
 let currentType = "all";
 
-// DOM
 const metricSelect = document.getElementById("metric-select");
 const typeSelect = document.getElementById("type-select");
 const contextCard = document.getElementById("context-summary");
 const detailCard = document.getElementById("detail-card");
 const legendEl = document.getElementById("map-legend");
-
-
-// Data loading
 
 async function loadData() {
   const base = getBasePath();
@@ -80,7 +74,6 @@ async function loadData() {
   populateTypeFilter();
 }
 
-
 function getBasePath() {
   const path = window.location.pathname;
   if (path.includes("/src/")) {
@@ -92,27 +85,32 @@ function getBasePath() {
 function parseCSV(text) {
   const lines = text.trim().split("\n");
   const headers = lines[0].split(",");
+
   return lines.slice(1).map(line => {
     const values = line.split(",");
     const obj = {};
+
     headers.forEach((h, i) => {
-      const v = values[i];
-      obj[h.trim()] = isNaN(v) || v === "" ? v : parseFloat(v);
+      const value = values[i];
+      const cleanKey = h.trim();
+
+      if (value === "true") {
+        obj[cleanKey] = true;
+      } else if (value === "false") {
+        obj[cleanKey] = false;
+      } else {
+        obj[cleanKey] = isNaN(value) || value === "" ? value : parseFloat(value);
+      }
     });
+
     return obj;
   });
 }
-
-
-// PMTiles protocol
 
 function initPMTiles() {
   const protocol = new pmtiles.Protocol();
   maplibregl.addProtocol("pmtiles", protocol.tile);
 }
-
-
-// Map initialization with stable inline style (no setStyle needed)
 
 function initMap() {
   map = new maplibregl.Map({
@@ -152,7 +150,7 @@ function initMap() {
   popup = new maplibregl.Popup({
     closeButton: false,
     closeOnClick: false,
-    maxWidth: "260px",
+    maxWidth: "280px",
   });
 
   map.on("load", () => {
@@ -166,9 +164,6 @@ function initMap() {
     updateContext();
   });
 }
-
-
-// Venezuela boundary (dashed outline, always visible)
 
 function addBoundaryLayer() {
   map.addSource("boundary", {
@@ -188,9 +183,6 @@ function addBoundaryLayer() {
   });
 }
 
-
-// PMTiles raster sources (registered but not visible until toggled)
-
 function addRasterSources() {
   const base = getBasePath();
 
@@ -202,9 +194,6 @@ function addRasterSources() {
     });
   });
 }
-
-
-// ABRAE polygons colored by the active metric
 
 function addAbraeLayer() {
   const filtered = filterFeatures();
@@ -235,7 +224,6 @@ function addAbraeLayer() {
     },
   });
 
-  // Highlight ring shown on hover (hidden by default via impossible filter)
   map.addLayer({
     id: "abraes-highlight",
     type: "line",
@@ -248,7 +236,6 @@ function addAbraeLayer() {
   });
 }
 
-// MapLibre "step" expression that maps metric values to colors
 function buildColorExpression() {
   const cfg = METRICS[currentMetric];
   const scale = getColorScale(currentMetric);
@@ -270,10 +257,10 @@ function filterFeatures() {
   const features = currentType === "all"
     ? geojsonData.features
     : geojsonData.features.filter(f => f.properties.DESIG === currentType);
+
   return { type: "FeatureCollection", features };
 }
 
-// Called when metric or type filter changes
 function updateAbraeLayer() {
   map.getSource("abraes").setData(filterFeatures());
   map.setPaintProperty("abraes-fill", "fill-color", buildColorExpression());
@@ -281,12 +268,10 @@ function updateAbraeLayer() {
   updateContext();
 }
 
-
-// Hover tooltip and click-to-detail
-
 function setupMapInteractions() {
   map.on("mousemove", "abraes-fill", (e) => {
     map.getCanvas().style.cursor = "pointer";
+
     const p = e.features[0].properties;
     const cfg = METRICS[currentMetric];
     const val = p[currentMetric] || 0;
@@ -294,7 +279,9 @@ function setupMapInteractions() {
     popup.setLngLat(e.lngLat).setHTML(
       `<div class="tt-name">${p.NAME_ENG}</div>` +
       `<div class="tt-type">${p.DESIG}</div>` +
-      `<div class="tt-metric ${cfg.cssClass}">${cfg.label}: ${cfg.format(val)}</div>`
+      `<div class="tt-metric ${cfg.cssClass}">${cfg.label}: ${cfg.format(val)}</div>` +
+      `<div class="tt-quality">Área comparable: ${fmtPct(p.valid_common_pct)}</div>` +
+      `${p.cloud_contamination_flag ? `<div class="tt-warning">Revisar: diferencia de nubes/no-data</div>` : ""}`
     ).addTo(map);
 
     map.setFilter("abraes-highlight", ["==", "SITE_ID", p.SITE_ID]);
@@ -311,9 +298,6 @@ function setupMapInteractions() {
   });
 }
 
-
-// Toolbar raster toggle buttons
-
 function setupToggleButtons() {
   document.querySelectorAll(".toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -323,10 +307,10 @@ function setupToggleButtons() {
       if (map.getLayer(layerId)) {
         const vis = map.getLayoutProperty(layerId, "visibility");
         const newVis = vis === "none" ? "visible" : "none";
+
         map.setLayoutProperty(layerId, "visibility", newVis);
         btn.classList.toggle("active", newVis === "visible");
       } else {
-        // First activation: add layer below ABRAEs
         map.addLayer({
           id: layerId,
           type: "raster",
@@ -334,61 +318,55 @@ function setupToggleButtons() {
           paint: { "raster-opacity": 0.7 },
           layout: { visibility: "visible" },
         }, "abraes-fill");
+
         btn.classList.add("active");
       }
 
-      // Sync the corresponding checkbox in the layer control
       syncCheckbox(layerName, btn.classList.contains("active"));
-      // Activate legend for rasters
       updateRasterLegend();
     });
   });
 }
 
-// Syncs a layer control checkbox with button state
 function syncCheckbox(layerName, checked) {
   const year = layerName.replace("lc", "");
   const checkbox = document.getElementById(`lc-${year}`);
+
   if (checkbox) checkbox.checked = checked;
 }
-
-
-// Layer control panel (basemap radios, overlay checkboxes)
 
 function setupLayerControl() {
   const toggle = document.getElementById("layer-control-toggle");
   const panel = document.getElementById("layer-control-panel");
 
-  // Open/close panel
   toggle.addEventListener("click", () => panel.classList.toggle("hidden"));
 
-  // Close when clicking outside
   document.addEventListener("click", (e) => {
-    if (!e.target.closest(".layer-control")) panel.classList.add("hidden");
+    if (!e.target.closest(".layer-control")) {
+      panel.classList.add("hidden");
+    }
   });
 
-  // Basemap switching (single source, swap tiles)
-document.querySelectorAll('input[name="basemap"]').forEach(radio => {
-  radio.addEventListener("change", () => {
-    map.getSource("basemap").setTiles([BASEMAP_TILES[radio.value]]);
-    // Show labels overlay on satellite (dark_all already has its own)
-    map.setLayoutProperty(
-      "labels",
-      "visibility",
-      radio.value === "satellite" ? "visible" : "none"
-    );
-  });
-});
+  document.querySelectorAll('input[name="basemap"]').forEach(radio => {
+    radio.addEventListener("change", () => {
+      map.getSource("basemap").setTiles([BASEMAP_TILES[radio.value]]);
 
-  // ABRAE visibility
+      map.setLayoutProperty(
+        "labels",
+        "visibility",
+        radio.value === "satellite" ? "visible" : "none"
+      );
+    });
+  });
+
   document.getElementById("lc-abraes").addEventListener("change", (e) => {
     const vis = e.target.checked ? "visible" : "none";
+
     ["abraes-fill", "abraes-outline", "abraes-highlight"].forEach(id => {
       map.setLayoutProperty(id, "visibility", vis);
     });
   });
 
-  // Raster layer checkboxes (independent from toolbar buttons to avoid loops)
   ["2017", "2024"].forEach(year => {
     document.getElementById(`lc-${year}`).addEventListener("change", (e) => {
       const layerName = `lc${year}`;
@@ -407,21 +385,20 @@ document.querySelectorAll('input[name="basemap"]').forEach(radio => {
         } else {
           map.setLayoutProperty(layerId, "visibility", "visible");
         }
+
         btn.classList.add("active");
       } else {
         if (map.getLayer(layerId)) {
           map.setLayoutProperty(layerId, "visibility", "none");
         }
+
         btn.classList.remove("active");
       }
-      // Raster legend
+
       updateRasterLegend();
     });
   });
 }
-
-
-// Color scale (95th percentile cap)
 
 function getColorScale(metricKey) {
   const values = geojsonData.features
@@ -435,9 +412,6 @@ function getColorScale(metricKey) {
 
   return { min: 0, max };
 }
-
-
-// Legend
 
 function renderLegend() {
   const cfg = METRICS[currentMetric];
@@ -456,16 +430,15 @@ function renderLegend() {
   `;
 }
 
-// Legend for rasters 
 function updateRasterLegend() {
   const anyActive = ["lc2017", "lc2024"].some(name => {
     const layer = map.getLayer(`${name}-raster`);
+
     return layer && map.getLayoutProperty(`${name}-raster`, "visibility") !== "none";
   });
+
   document.getElementById("raster-legend").classList.toggle("hidden", !anyActive);
 }
-
-// Context summary
 
 function updateContext() {
   const cfg = METRICS[currentMetric];
@@ -473,23 +446,26 @@ function updateContext() {
   const values = features.map(f => f.properties[currentMetric] || 0);
   const total = values.reduce((a, b) => a + b, 0);
   const affected = values.filter(v => v > 0).length;
+  const flagged = features.filter(f => f.properties.cloud_contamination_flag).length;
   const typeLabel = currentType === "all" ? "todas las ABRAEs" : currentType;
 
   let text = `<strong>${affected}</strong> de ${features.length} ${typeLabel} registran `;
 
   if (currentMetric.includes("loss")) {
-    text += `pérdida de bosque, con un total de <span class="metric-highlight">${cfg.format(total)} ha.</span>`;
+    text += `pérdida de bosque sobre área comparable, con un total de <span class="metric-highlight">${cfg.format(total)} ha.</span>`;
   } else if (currentMetric.includes("agriculture")) {
-    text += `ganancia de superficie agrícola, totalizando <span class="metric-highlight">${cfg.format(total)} ha</span>.`;
+    text += `ganancia agrícola sobre área comparable, totalizando <span class="metric-highlight">${cfg.format(total)} ha</span>.`;
   } else if (currentMetric.includes("urban")) {
-    text += `expansión urbana, totalizando <span class="metric-highlight">${cfg.format(total)} ha</span>.`;
+    text += `expansión urbana sobre área comparable, totalizando <span class="metric-highlight">${cfg.format(total)} ha</span>.`;
   }
+
+  text += `<br><span class="context-note">
+    Las métricas se calculan solo con píxeles observados como válidos tanto en 2017 como en 2024.
+    ${flagged > 0 ? `${flagged} ABRAE tienen alerta por diferencia de nubes/no-data.` : ""}
+  </span>`;
 
   contextCard.innerHTML = text;
 }
-
-
-// Detail card
 
 function showDetail(props) {
   detailCard.classList.remove("hidden");
@@ -502,10 +478,12 @@ function showDetail(props) {
       <span class="label">Bosque 2017</span>
       <span class="value">${fmt(props.forest_2017_ha)} ha</span>
     </div>
+
     <div class="detail-metric">
       <span class="label">Bosque 2024</span>
       <span class="value">${fmt(props.forest_2024_ha)} ha</span>
     </div>
+
     <div class="detail-metric">
       <span class="label">Cambio neto</span>
       <span class="value ${props.forest_loss_ha > 0 ? 'loss' : 'gain'}">
@@ -514,17 +492,40 @@ function showDetail(props) {
           : '+' + fmt(props.forest_2024_ha - props.forest_2017_ha) + ' ha'}
       </span>
     </div>
+
     <div class="detail-metric">
-      <span class="label">Área total</span>
+      <span class="label">Área comparable</span>
       <span class="value">${fmt(props.total_area_ha)} ha</span>
     </div>
+
     <div class="detail-metric">
       <span class="label">Ganancia agrícola</span>
       <span class="value">${fmt(props.agriculture_gain_ha)} ha</span>
     </div>
+
     <div class="detail-metric">
       <span class="label">Expansión urbana</span>
       <span class="value">${fmt(props.urban_gain_ha)} ha</span>
+    </div>
+
+    <div class="detail-metric">
+      <span class="label">Comparabilidad</span>
+      <span class="value">${fmtPct(props.valid_common_pct)}</span>
+    </div>
+
+    <div class="detail-metric">
+      <span class="label">Excluido nube/no-data</span>
+      <span class="value">${fmtPct(props.excluded_pct)}</span>
+    </div>
+
+    <div class="detail-quality ${reliabilityClass(props)}">
+      <span class="label">Confiabilidad temporal</span>
+      <span class="value">${reliabilityLabel(props)}</span>
+      <small>
+        ${props.cloud_contamination_flag
+          ? "Esta ABRAE presenta diferencias relevantes de nubes/no-data entre años. Interpretar el cambio con cautela."
+          : "La comparación temporal presenta alta cobertura válida común."}
+      </small>
     </div>
   `;
 
@@ -544,12 +545,23 @@ function showDetail(props) {
   }, { displayModeBar: false, responsive: true });
 }
 
+function reliabilityLabel(props) {
+  return props.cloud_contamination_flag ? "Revisar" : "Alta";
+}
+
+function reliabilityClass(props) {
+  return props.cloud_contamination_flag ? "warning" : "ok";
+}
+
 function fmt(v) {
   return (v || 0).toLocaleString("es-VE", { maximumFractionDigits: 0 });
 }
 
-
-// Charts
+function fmtPct(v) {
+  return (v ?? 0).toLocaleString("es-VE", {
+    maximumFractionDigits: 2,
+  }) + "%";
+}
 
 function renderCharts() {
   renderRankingChart();
@@ -569,15 +581,18 @@ function chartLayout() {
 
 function renderRankingChart() {
   const cfg = METRICS[currentMetric];
+
   document.getElementById("ranking-title").textContent = cfg.shortLabel;
 
   const scope = currentType === "all" ? "national" : currentType;
+
   let data = rankingsData.filter(
     r => r.metric === currentMetric && r.rank_scope === scope
   );
 
   if (data.length === 0) {
     const features = filterFeatures().features;
+
     data = features
       .map(f => f.properties)
       .filter(p => (p[currentMetric] || 0) > 0)
@@ -644,11 +659,9 @@ function truncate(str, n) {
   return str && str.length > n ? str.substring(0, n - 1) + "…" : str;
 }
 
-
-// Filter controls
-
 function populateTypeFilter() {
   const types = [...new Set(geojsonData.features.map(f => f.properties.DESIG))].sort();
+
   types.forEach(t => {
     const opt = document.createElement("option");
     opt.value = t;
@@ -672,9 +685,6 @@ typeSelect.addEventListener("change", () => {
 document.getElementById("close-detail").addEventListener("click", () => {
   detailCard.classList.add("hidden");
 });
-
-
-// Init
 
 async function init() {
   initPMTiles();

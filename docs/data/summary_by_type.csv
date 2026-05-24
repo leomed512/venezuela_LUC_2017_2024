@@ -1,7 +1,7 @@
-DESIG,n_abrae,forest_loss_ha,agriculture_gain_ha,urban_gain_ha
-Monumento Natural (MN),37,9378.8,329.04999999999995,171.76999999999998
-Parque Nacional (PN),43,84393.72,14848.089999999998,1139.39
-Reserva Forestal (RF),14,64194.119999999995,21625.75,4841.7
-Reserva Nacional Hidraúlica (RNH),14,63569.27,15671.82,6230.65
-Zona Protectora (ZP),64,269720.01,3988.67,9135.3
-Área Boscosa Bajo Protección (ABBP),43,181376.87,34140.61,628.99
+DESIG,n_abrae,forest_loss_ha,agriculture_gain_ha,urban_gain_ha,total_area_ha,valid_common_ha,median_valid_common_pct,median_excluded_pct,n_cloud_flagged
+Monumento Natural (MN),37,11899.39,195.94,114.63,6382192.5,6382192.5,99.9,0.1,2
+Parque Nacional (PN),43,133454.01,14848.13,868.01,19221616.97,19221616.97,98.68,1.32,5
+Reserva Forestal (RF),14,80138.01,21497.19,4510.88,8440519.95,8440519.95,99.92,0.04,0
+Reserva Nacional Hidraúlica (RNH),14,76254.5,15665.67,5318.5,2369718.7199999997,2369718.7199999997,99.99000000000001,0.01,0
+Zona Protectora (ZP),64,314238.37,4334.62,7806.54,10415400.77,10415400.77,99.895,0.105,4
+Área Boscosa Bajo Protección (ABBP),43,184725.13,34120.98,588.97,3444156.98,3444156.98,100.0,0.0,1

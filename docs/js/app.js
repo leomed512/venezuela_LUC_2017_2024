@@ -281,7 +281,7 @@ function setupMapInteractions() {
       `<div class="tt-type">${p.DESIG}</div>` +
       `<div class="tt-metric ${cfg.cssClass}">${cfg.label}: ${cfg.format(val)}</div>` +
       `<div class="tt-quality">Área comparable: ${fmtPct(p.valid_common_pct)}</div>` +
-      `${p.cloud_contamination_flag ? `<div class="tt-warning">Revisar: diferencia de nubes/no-data</div>` : ""}`
+      `${p.cloud_contamination_flag ? `<div class="tt-warning">Parcialmente afectada por diferencias de nubosidad entre años.</div>` : ""}`
     ).addTo(map);
 
     map.setFilter("abraes-highlight", ["==", "SITE_ID", p.SITE_ID]);
@@ -458,11 +458,6 @@ function updateContext() {
   } else if (currentMetric.includes("urban")) {
     text += `expansión urbana sobre área comparable, totalizando <span class="metric-highlight">${cfg.format(total)} ha</span>.`;
   }
-
-  text += `<br><span class="context-note">
-    Las métricas se calculan solo con píxeles observados como válidos tanto en 2017 como en 2024.
-    ${flagged > 0 ? `${flagged} ABRAE tienen alerta por diferencia de nubes/no-data.` : ""}
-  </span>`;
 
   contextCard.innerHTML = text;
 }
